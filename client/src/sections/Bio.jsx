@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { themeContext } from "../context/context";
+import { themeContext, headerHeightContext } from "../context/context";
 import {
 	Card,
 	CardHeader,
@@ -15,10 +15,11 @@ import {
 
 function Intro() {
 	const { setAlternateTheme, alternateTheme, light, dark } = useContext(themeContext);
+	const { headerHeight, setHeaderHeight } = useContext(headerHeightContext);
 
 	const textColor = alternateTheme ? dark.text : light.text;
 	const bgColor = alternateTheme ? dark.bg : light.bg;
-	const imageSrc = alternateTheme ? dark.image : light.image;
+	const accentColor = alternateTheme ? dark.accentColor : light.accentColor;
 
 	return (
 		<Flex width="100%">
@@ -31,11 +32,17 @@ function Intro() {
 				boxShadow="dark-lg"
 				pt={5}
 			>
-				<CardHeader pb={0}>
+				<CardHeader pb={0} height={headerHeight}>
 					<Heading size={{ base: "2xl", sm: "4xl" }}>About Me:</Heading>
 				</CardHeader>
 
-				<Divider my={4} orientation="horizontal" width="90%" alignSelf="center" />
+				<Divider
+					color={accentColor}
+					my={4}
+					orientation="horizontal"
+					width="90%"
+					alignSelf="center"
+				/>
 
 				<CardBody pt={{ sm: 0, lg: 6 }}>
 					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={2}>

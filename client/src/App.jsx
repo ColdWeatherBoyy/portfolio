@@ -12,7 +12,6 @@ function App() {
 			templateRows="repeat(4, 1fr)"
 			width="100vw"
 			height="100vh"
-			// bg={{ sm: "gray.800", md: "gray.400", lg: "gray.200" }}
 		>
 			<GridItem>
 				<Header />
