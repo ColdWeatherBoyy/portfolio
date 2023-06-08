@@ -12,6 +12,7 @@ function App() {
 			templateRows="repeat(4, 1fr)"
 			width="100vw"
 			height="100vh"
+			bg="white"
 		>
 			<GridItem>
 				<Header />

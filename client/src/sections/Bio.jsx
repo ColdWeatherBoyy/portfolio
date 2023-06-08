@@ -32,8 +32,8 @@ function Intro() {
 				boxShadow="dark-lg"
 				pt={5}
 			>
-				<CardHeader pb={0} height={headerHeight}>
-					<Heading size={{ base: "2xl", sm: "4xl" }}>About Me:</Heading>
+				<CardHeader pb={0} height={headerHeight + "px"}>
+					<Heading size={{ base: "2xl", sm: "3xl" }}>About Me:</Heading>
 				</CardHeader>
 
 				<Divider
@@ -44,17 +44,16 @@ function Intro() {
 					alignSelf="center"
 				/>
 
-				<CardBody pt={{ sm: 0, lg: 6 }}>
+				<CardBody pt="0">
 					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={2}>
 						As mentioned, I'm Elias{" "}
-						<Text as="span" fontSize={{ base: "2xs", md: "2xs" }}>
+						<Text as="span" fontSize={{ base: "2xs", md: "xs" }}>
 							(Spector-Zabusky)
 						</Text>
-						. I'm a web developer and digital native working in the MERN stack and a
-						professional musician (hover my photo for a surprise!). I'm a recent graduate
-						of Columbia Engineering's Coding Boot Camp with a background in operations and
-						project management. I'm passionate about building things that are useful and
-						exciting and have a strong interest in backend development, databases, and AI.
+						, a web developer working in the MERN stack, and a recent graduate of Columbia
+						Engineering's Coding Boot Camp. . I'm also a musician (hover my photo for a
+						surprise!). I'm passionate about building things that are useful and exciting
+						and have a strong interest in backend development, databases, and AI.
 					</Text>
 				</CardBody>
 			</Card>

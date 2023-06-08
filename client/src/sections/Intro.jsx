@@ -60,7 +60,7 @@ function Intro() {
 					ref={sectionHeaderRef}
 				>
 					<CardHeader pb={0}>
-						<Heading size={{ base: "2xl", sm: "4xl" }}>Hey!</Heading>
+						<Heading size={{ base: "2xl", sm: "3xl" }}>Hey!</Heading>
 					</CardHeader>
 					<Image
 						src={imageSrc}
