@@ -4,6 +4,12 @@ import App from "./App.jsx";
 import TestPage from "./TestPage.jsx";
 import ErrorPage from "./ErrorPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
+
+import "@fontsource/poppins/400.css";
+import "@fontsource/inter/400.css";
+import theme from "./theme/theme.js";
+import { ContextProvider } from "./context/context";
 
 const router = createBrowserRouter([
 	{
@@ -19,6 +25,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<ContextProvider>
+			<ChakraProvider theme={theme}>
+				<RouterProvider router={router} />
+			</ChakraProvider>
+		</ContextProvider>
 	</React.StrictMode>
 );
