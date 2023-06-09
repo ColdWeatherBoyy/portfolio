@@ -50,7 +50,8 @@ function Intro() {
 				mx={6}
 				bg={bgColor}
 				boxShadow="dark-lg"
-				py={5}
+				pt={2}
+				pb={3}
 			>
 				<Grid
 					templateColumns="repeat(2, 1fr)"
@@ -74,27 +75,28 @@ function Intro() {
 				</Grid>
 				<Divider
 					color={accentColor}
-					my={4}
+					my={2}
 					orientation="horizontal"
 					width="90%"
 					alignSelf="center"
 				/>
 
 				<CardBody py={0}>
-					<Flex height="100%" direction="column" justify="space-between">
+					<Flex height="100%" direction="column" justify="space-evenly">
 						<Text fontSize={{ base: "sm", md: "md" }} maxW="50%">
 							Now that I have your attention...
 						</Text>
-						<Heading textAlign="center" size={{ base: "lg", sm: "xl" }} py={4}>
+						<Text alignSelf="center" fontSize={{ base: "sm", sm: "md" }}>
 							I'm{" "}
-							<Text as="span" color={accentColor}>
+							<Text as="span" color={accentColor} fontSize={{ base: "xl", sm: "3xl" }}>
+								{" "}
 								Elias{" "}
 							</Text>
 							<Text as="span" fontSize="2xs">
 								(the guy in that picture up there)
 							</Text>
-						</Heading>
-						<Text fontSize="xs" textAlign="right">
+						</Text>
+						<Text fontSize="xs" alignSelf="flex-end">
 							Please hire me.
 						</Text>
 					</Flex>

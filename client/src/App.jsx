@@ -9,7 +9,7 @@ function App() {
 	return (
 		<Grid
 			templateColumns="1fr"
-			templateRows=".1fr .75fr 1.25fr .1fr"
+			templateRows=".1fr .5fr 1.75fr .1fr"
 			width="100vw"
 			height="100vh"
 			bg="white"
@@ -25,7 +25,7 @@ function App() {
 				<Bio width={{ sm: "100%", lg: "50vw" }} />
 			</Flex>
 			<ProjectList />
-			<Footer />
+			{/* <Footer /> */}
 		</Grid>
 	);
 }

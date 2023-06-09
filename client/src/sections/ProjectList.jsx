@@ -36,7 +36,7 @@ const ImageCarousel = () => {
 
 	return (
 		<Box
-			p={4}
+			p={5}
 			borderRadius="xl"
 			boxShadow="dark-lg"
 			bg="white"
@@ -44,66 +44,83 @@ const ImageCarousel = () => {
 			width={{ base: "95%", lg: "50%" }}
 			height="fit-content"
 		>
-			<Flex direction="column" justify="space-around" width="100%">
+			<Flex direction="column" width="100%" gap={5}>
 				<Flex align="center" justify="space-around" width="100%" mb={4}>
 					<IconButton
 						bg={bgColor}
 						color={textColor}
-						boxShadow="dark-lg"
+						boxShadow="2xl"
 						icon={<ChevronLeftIcon />}
-						onClick={prevImage}
+						onClick={nextImage}
 						size="lg"
-						mr={4}
-						aria-label="Previous Image"
-						_hover={{ color: accentColor }}
+						ml={4}
+						aria-label="Next Image"
+						_hover={{ color: accentColor, transform: "scale(1.05)" }}
 						_active={{
 							color: accentColor,
-							boxShadow: "inset 0px 0px 10px 5px rgba(0,0,0,0.75)",
-							transform: "scale(0.9)",
+							boxShadow: "inset 0px 0px 5px 5px rgba(0,0,0,0.75)",
+							transform: "scale(0.95)",
 						}}
 					/>
 
 					<Image
 						src={images[currentImageIndex]}
 						alt={`Image ${currentImageIndex}`}
-						w="75%"
-						h="25%"
+						w="70%"
 						borderRadius="xl"
 						boxShadow="dark-lg"
 					/>
 					<IconButton
 						bg={bgColor}
 						color={textColor}
-						boxShadow="dark-lg"
+						boxShadow="2xl"
 						icon={<ChevronRightIcon />}
 						onClick={nextImage}
 						size="lg"
 						ml={4}
 						aria-label="Next Image"
-						_hover={{ color: accentColor }}
+						_hover={{ color: accentColor, transform: "scale(1.05)" }}
 						_active={{
 							color: accentColor,
-							boxShadow: "inset 0px 0px 10px 5px rgba(0,0,0,0.75)",
-							transform: "scale(0.9)",
+							boxShadow: "inset 0px 0px 5px 5px rgba(0,0,0,0.75)",
+							transform: "scale(0.95)",
 						}}
 					/>
 				</Flex>
-				<Flex justify="center">
+				<Flex
+					justify="center"
+					borderRadius="xl"
+					p={4}
+					boxShadow="inset 5px 5px 12px rgba(0, 0, 0, 0.2), inset -5px -5px 12px rgba(255, 255, 255, 0.4)"
+				>
 					{images.map((image, index) => (
 						<Image
 							key={index}
 							src={image}
 							alt={`Thumbnail ${index}`}
-							boxSize="50px"
+							aspectRatio="1 / 1"
+							boxSize="10%"
 							objectFit="cover"
 							mx={2}
 							opacity={index === currentImageIndex ? 1 : 0.6}
+							transform={index === currentImageIndex ? "scale(1)" : "scale(.9)"}
 							cursor="pointer"
 							borderRadius="full"
-							boxShadow="md"
-							_hover={{ boxShadow: "xl" }}
-							transition="box-shadow 0.3s"
+							boxShadow="xl"
+							border={index === currentImageIndex ? `.5px solid ${bgColor}` : "0px"}
+							_hover={{
+								boxShadow: "dark-lg",
+								opacity: 1,
+								transform: "scale(1.05)",
+							}}
+							_active={{
+								boxShadow: "xl",
+								opacity: 0.95,
+								transform: "scale(1)",
+							}}
+							transition="box-shadow 0.3s, border 0.3s, transform 0.3s"
 							onClick={() => setCurrentImageIndex(index)}
+							zIndex={1}
 						/>
 					))}
 				</Flex>

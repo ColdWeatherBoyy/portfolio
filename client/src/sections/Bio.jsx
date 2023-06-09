@@ -29,7 +29,8 @@ function Intro() {
 				mx={6}
 				bg={bgColor}
 				boxShadow="dark-lg"
-				py={5}
+				pt={2}
+				pb={3}
 			>
 				<Flex height={headerHeight + "px"} align="center">
 					<CardHeader py={0}>
@@ -39,14 +40,14 @@ function Intro() {
 
 				<Divider
 					color={accentColor}
-					my={4}
+					my={2}
 					orientation="horizontal"
 					width="90%"
 					alignSelf="center"
 				/>
 
 				<CardBody py="0">
-					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={2}>
+					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={1.75}>
 						As mentioned, I'm Elias{" "}
 						<Text as="span" fontSize={{ base: "2xs", md: "xs" }}>
 							(Spector-Zabusky)
