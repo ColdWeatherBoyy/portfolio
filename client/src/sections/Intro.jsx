@@ -11,6 +11,7 @@ import {
 	Divider,
 	Image,
 	Grid,
+	Box,
 } from "@chakra-ui/react";
 
 function Intro() {
@@ -65,12 +66,20 @@ function Intro() {
 					<Image
 						src={imageSrc}
 						onLoad={() => setHeaderHeight(sectionHeaderRef.current.offsetHeight)}
-						onMouseEnter={() => setAlternateTheme(!alternateTheme)}
-						onMouseLeave={() => setAlternateTheme(!alternateTheme)}
-						onTouchStart={() => setAlternateTheme(!alternateTheme)}
+						onClick={() => setAlternateTheme(!alternateTheme)}
 						alt="Picture of Elias"
 						borderRadius="100%"
 						maxW="25%"
+						cursor="pointer"
+						_hover={{
+							transform: "scale(1.03)",
+							boxShadow: "lg",
+						}}
+						_active={{
+							transform: "scale(0.97)",
+							boxShadow: "inset 0px 0px 10px 5px rgba(0, 0, 0, 0.75)",
+						}}
+						transition="all 0.2s ease-in-out"
 					/>
 				</Grid>
 				<Divider

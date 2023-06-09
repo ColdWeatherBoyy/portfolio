@@ -53,9 +53,9 @@ function Intro() {
 							(Spector-Zabusky)
 						</Text>
 						, a web developer working with the MERN stack, and a recent graduate of
-						Columbia Engineering's Coding Boot Camp. I'm also a musician (hover my photo
-						for a surprise!). I'm passionate about building things that are useful and
-						exciting and have a strong interest in backend development, databases, and AI.
+						Columbia Engineering's Coding Boot Camp. I'm also a musician (click my photo
+						to see!). I'm passionate about building things that are useful and exciting
+						and have a strong interest in backend development, databases, and AI.
 					</Text>
 				</CardBody>
 			</Card>
