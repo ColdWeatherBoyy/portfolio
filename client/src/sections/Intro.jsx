@@ -48,7 +48,7 @@ function Intro() {
 			<Card
 				textColor={textColor}
 				height="100%"
-				mx={6}
+				mx={4}
 				bg={bgColor}
 				boxShadow="dark-lg"
 				pt={2}
