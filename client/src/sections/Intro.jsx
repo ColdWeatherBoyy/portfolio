@@ -45,13 +45,12 @@ function Intro() {
 	return (
 		<Flex width="100%">
 			<Card
-				justifyItems="center"
 				textColor={textColor}
 				height="100%"
 				mx={6}
 				bg={bgColor}
 				boxShadow="dark-lg"
-				pt={5}
+				py={5}
 			>
 				<Grid
 					templateColumns="repeat(2, 1fr)"
@@ -59,8 +58,8 @@ function Intro() {
 					justifyItems="center"
 					ref={sectionHeaderRef}
 				>
-					<CardHeader pb={0}>
-						<Heading size={{ base: "2xl", sm: "3xl" }}>Hey!</Heading>
+					<CardHeader py={0}>
+						<Heading size={{ base: "xl", sm: "2xl" }}>Hey!</Heading>
 					</CardHeader>
 					<Image
 						src={imageSrc}
@@ -81,7 +80,7 @@ function Intro() {
 					alignSelf="center"
 				/>
 
-				<CardBody pt={0}>
+				<CardBody py={0}>
 					<Flex height="100%" direction="column" justify="space-between">
 						<Text fontSize={{ base: "sm", md: "md" }} maxW="50%">
 							Now that I have your attention...
