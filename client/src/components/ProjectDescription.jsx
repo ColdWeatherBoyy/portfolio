@@ -1,16 +1,15 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Flex, Text, useBreakpointValue } from "@chakra-ui/react";
 import { themeContext } from "../context/context";
 
 import LogoIcons from "./LogoIcons";
 
 function ProjectDescription({ repoLink, deployedLink, name }) {
-	const { setAlternateTheme, alternateTheme, light, dark } = useContext(themeContext);
+	const { alternateTheme, light, dark } = useContext(themeContext);
 	const isLargerThanLg = useBreakpointValue({ base: false, lg: true });
 
 	const textColor = alternateTheme ? dark.text : light.text;
 	const bgColor = alternateTheme ? dark.bg : light.bg;
-	const accentColor = alternateTheme ? dark.accentColor : light.accentColor;
 
 	return (
 		<>
@@ -20,19 +19,14 @@ function ProjectDescription({ repoLink, deployedLink, name }) {
 				<Flex w="100%" justify="center">
 					<Flex
 						bg={bgColor}
-						opacity="1"
 						borderRadius="full"
 						px={4}
-						py={4}
+						py={2}
 						justify="center"
 						align="center"
 						boxShadow="dark-lg"
 					>
-						<Text
-							textAlign="center"
-							color={textColor}
-							fontSize={{ base: "xl", lg: "3xl" }}
-						>
+						<Text textAlign="center" color={textColor} fontSize="3xl">
 							{name}
 						</Text>
 					</Flex>
@@ -45,28 +39,25 @@ function ProjectDescription({ repoLink, deployedLink, name }) {
 				width="100%"
 				bottom={0}
 				pb={3}
-				justify={{ base: "space-around", lg: "space-between" }}
+				justify="space-between"
 				align={{ base: "auto", lg: "center" }}
 			>
 				<LogoIcons link={repoLink} purpose="github" />
 				{isLargerThanLg ? (
 					<Flex
 						bg={bgColor}
-						opacity=".9"
 						borderRadius="full"
-						px={4}
-						py={0}
+						px={3}
+						py={2}
 						justify="center"
 						align="center"
-						w={{ base: "35%", lg: "auto" }}
-						maxW={{ base: "35%", lg: "75%" }}
+						// w={{ base: "35%", lg: "auto" }}
+						maxW="65%"
+						minW="45%"
+						w="fit-content"
 						boxShadow="dark-lg"
 					>
-						<Text
-							textAlign="center"
-							color={textColor}
-							fontSize={{ base: "xl", lg: "3xl" }}
-						>
+						<Text textAlign="center" color={textColor} fontSize="3xl" lineHeight="95%">
 							{name}
 						</Text>
 					</Flex>

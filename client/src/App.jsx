@@ -7,25 +7,18 @@ import { Box, Grid, Flex } from "@chakra-ui/react";
 
 function App() {
 	return (
-		<Grid
-			templateColumns="1fr"
-			templateRows=".1fr .5fr 1.75fr .1fr"
-			width="100vw"
-			height="100vh"
-			bg="white"
-			gap={6}
-		>
+		<Grid templateColumns="1fr" templateRows="auto" bg="white" gap={6} height="100%">
 			<Header />
 			<Flex
 				width="100%"
 				direction={{ base: "column", lg: "row" }}
 				gap={{ base: 6, lg: 0 }}
 			>
-				<Intro width={{ sm: "100%", lg: "50vw" }} />
-				<Bio width={{ sm: "100%", lg: "50vw" }} />
+				<Intro />
+				<Bio />
 			</Flex>
 			<ProjectList />
-			{/* <Footer /> */}
+			<Footer />
 		</Grid>
 	);
 }

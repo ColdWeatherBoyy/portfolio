@@ -1,18 +1,51 @@
-import React, { useContext, useEffect, useRef } from "react";
-import { themeContext, headerHeightContext } from "../context/context";
-import { Box, Flex, Image } from "@chakra-ui/react";
+import React, { useContext } from "react";
+import { themeContext } from "../context/context";
+import { Button, Flex, Link } from "@chakra-ui/react";
 
 function Footer() {
-	const { setAlternateTheme, alternateTheme, light, dark } = useContext(themeContext);
+	const { alternateTheme, light, dark } = useContext(themeContext);
 
 	const textColor = alternateTheme ? dark.text : light.text;
 	const bgColor = alternateTheme ? dark.bg : light.bg;
-	const imageSrc = alternateTheme ? dark.image : light.image;
 	const accentColor = alternateTheme ? dark.accentColor : light.accentColor;
 
+	const handleResumeDownload = () => {
+		const fileUrl = "/images/biopic.jpg";
+		const link = document.createElement("a");
+		link.href = fileUrl;
+		link.download = "biopic.jpg";
+		link.click();
+	};
+
 	return (
-		<Flex width="100%" bg={bgColor} justify="center" align="flex-end">
-			<Box>{/* Your footer content goes here */}</Box>
+		<Flex width="100%" bg={bgColor} color={textColor} justify="center" py={2} gap={4}>
+			<Link
+				isExternal
+				href="https://www.github.com/coldweatherboyy"
+				_hover={{ color: accentColor, textDecoration: "underline" }}
+			>
+				Github
+			</Link>
+			<Link
+				isExternal
+				href="https://www.linkedin.com/in/elias-sz/"
+				_hover={{ color: accentColor, textDecoration: "underline" }}
+			>
+				LinkedIn
+			</Link>
+			<Link
+				isExternal
+				href="mailto:elias.spector.zabusky@gmail.com?subject=Wow, what a cool portfolio, Elias!"
+				_hover={{ color: accentColor, textDecoration: "underline" }}
+			>
+				Email
+			</Link>
+			<Link
+				onClick={handleResumeDownload}
+				_hover={{ color: accentColor, textDecoration: "underline" }}
+			>
+				Resume
+			</Link>
 		</Flex>
 	);
 }

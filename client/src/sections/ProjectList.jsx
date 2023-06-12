@@ -1,6 +1,14 @@
 import React, { useState, useContext } from "react";
 import { themeContext } from "../context/context";
-import { Box, Image, Flex, IconButton, useBreakpointValue } from "@chakra-ui/react";
+import {
+	Box,
+	Image,
+	Heading,
+	Flex,
+	IconButton,
+	useBreakpointValue,
+	Divider,
+} from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import ProjectDescription from "../components/ProjectDescription";
 
@@ -80,9 +88,21 @@ const ImageCarousel = () => {
 				boxShadow="dark-lg"
 				bg="white"
 				mx={4}
-				width={{ base: "95%", lg: "50%" }}
+				width={{ base: "100%", lg: "60%" }}
 				height="fit-content"
 			>
+				<Flex direction="column">
+					<Heading px={5} color={bgColor} size={{ base: "xl", sm: "2xl" }}>
+						Projects
+					</Heading>
+					<Divider
+						borderColor={accentColor}
+						my={{ base: 3, lg: 6 }}
+						orientation="horizontal"
+						width="90%"
+						alignSelf="center"
+					/>
+				</Flex>
 				<Flex direction="column" width="100%" gap={{ base: 0, lg: 5 }}>
 					<Flex align="center" justify="space-around" width="100%" mb={4}>
 						<IconButton
