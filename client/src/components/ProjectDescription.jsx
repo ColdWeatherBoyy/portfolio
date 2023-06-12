@@ -21,7 +21,6 @@ function ProjectDescription({ repoLink, deployedLink, name }) {
 						bg={bgColor}
 						borderRadius="full"
 						px={4}
-						py={2}
 						justify="center"
 						align="center"
 						boxShadow="dark-lg"

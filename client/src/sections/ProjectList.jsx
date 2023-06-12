@@ -117,7 +117,7 @@ const ImageCarousel = () => {
 							_hover={{ color: accentColor, transform: "scale(1.05)" }}
 							_active={{
 								color: accentColor,
-								boxShadow: "inset 0px 0px 5px 5px rgba(0,0,0,0.75)",
+								boxShadow: "inset 0px 0px 5px 5px rgba(0,0,0,0.5)",
 								transform: "scale(0.95)",
 							}}
 						/>
@@ -128,6 +128,9 @@ const ImageCarousel = () => {
 								w="100%"
 								borderRadius="xl"
 								boxShadow="dark-lg"
+								opacity=".85"
+								_hover={{ opacity: "1" }}
+								_active={{ opacity: "1" }}
 							/>
 							{isLargerThanLg ? (
 								<ProjectDescription
@@ -151,7 +154,7 @@ const ImageCarousel = () => {
 							_hover={{ color: accentColor, transform: "scale(1.05)" }}
 							_active={{
 								color: accentColor,
-								boxShadow: "inset 0px 0px 5px 5px rgba(0,0,0,0.75)",
+								boxShadow: "inset 0px 0px 5px 5px rgba(0,0,0,0.5)",
 								transform: "scale(0.95)",
 							}}
 						/>
@@ -165,42 +168,44 @@ const ImageCarousel = () => {
 							name={projects[currentImageIndex].name}
 						/>
 					)}
-					<Flex
-						justify="center"
-						borderRadius="xl"
-						p={4}
-						boxShadow="inset 5px 5px 12px rgba(0, 0, 0, 0.2), inset -5px -5px 12px rgba(255, 255, 255, 0.4)"
-					>
-						{projects.map((image, index) => (
-							<Image
-								key={index}
-								src={image.src}
-								alt={`Thumbnail ${index}`}
-								aspectRatio="1 / 1"
-								boxSize="10%"
-								objectFit="cover"
-								mx={2}
-								opacity={index === currentImageIndex ? 1 : 0.6}
-								transform={index === currentImageIndex ? "scale(1)" : "scale(.9)"}
-								cursor="pointer"
-								borderRadius="full"
-								boxShadow="xl"
-								border={index === currentImageIndex ? `.5px solid ${bgColor}` : "0px"}
-								_hover={{
-									boxShadow: "dark-lg",
-									opacity: 1,
-									transform: "scale(1.05)",
-								}}
-								_active={{
-									boxShadow: "xl",
-									opacity: 0.95,
-									transform: "scale(1)",
-								}}
-								transition="box-shadow 0.3s, border 0.3s, transform 0.3s"
-								onClick={() => setCurrentImageIndex(index)}
-								zIndex={1}
-							/>
-						))}
+					<Flex justify="center">
+						<Flex
+							h="100%"
+							justify="space-evenly"
+							borderRadius="xl"
+							p={2}
+							boxShadow="inset 5px 5px 12px rgba(0, 0, 0, 0.2), inset -5px -5px 12px rgba(255, 255, 255, 0.4)"
+							gap={2}
+						>
+							{projects.map((image, index) => (
+								<Image
+									key={index}
+									src={image.src}
+									alt={`Thumbnail ${index}`}
+									aspectRatio="1 / 1"
+									boxSize="8%"
+									objectFit="cover"
+									opacity={index === currentImageIndex ? 1 : 0.6}
+									transform={index === currentImageIndex ? "scale(1)" : "scale(.9)"}
+									cursor="pointer"
+									borderRadius="full"
+									boxShadow="xl"
+									border={index === currentImageIndex ? `.5px solid ${bgColor}` : "0px"}
+									_hover={{
+										boxShadow: "dark-lg",
+										opacity: 1,
+										transform: "scale(1.05)",
+									}}
+									_active={{
+										boxShadow: "xl",
+										opacity: 0.95,
+										transform: "scale(1)",
+									}}
+									transition="box-shadow 0.3s, border 0.3s, transform 0.3s"
+									onClick={() => setCurrentImageIndex(index)}
+								/>
+							))}
+						</Flex>
 					</Flex>
 				</Flex>
 			</Box>
