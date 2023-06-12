@@ -7,7 +7,7 @@ import { Box, Grid, Flex } from "@chakra-ui/react";
 
 function App() {
 	return (
-		<Grid templateColumns="1fr" templateRows="auto" bg="white" gap={6} height="100%">
+		<Grid templateColumns="1fr" templateRows="auto" bg="white" gap={10} height="100%">
 			<Header />
 			<Flex
 				width="100%"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Image } from "@chakra-ui/react";
+import { Link, Image, AspectRatio } from "@chakra-ui/react";
 
 function LogoIcons({ link, purpose }) {
 	const [hoverStatus, setHoverStatus] = useState(false);
@@ -18,20 +18,19 @@ function LogoIcons({ link, purpose }) {
 		<Link
 			href={link}
 			boxShadow="xl"
-			_active={{ boxShadow: "none", transform: "scale(.95)" }}
+			_active={{ boxShadow: "none", transform: "scale(.7)" }}
 			transition="all .1s"
 			borderRadius="full"
-			display="inline-flex"
 			alignItems="center"
 			justifyContent="center"
-			w={{ base: "auto%", md: "fit-content", lg: "15%" }}
-			transform={{ base: "scale(.75)", lg: "auto" }}
 			isExternal
+			// transform={{ base: "scale(.5)", lg: "scale(.8)" }}
 		>
 			{purpose === "github" ? (
 				<Image
 					bg={!hoverStatus ? "white" : "black"}
 					borderRadius="full"
+					w={{ base: "10vw", lg: "5vw" }}
 					src={!hoverStatus ? githubIcon.imageSrc : githubIcon.hoverImageSrc}
 					onMouseEnter={() => {
 						setHoverStatus(true);
@@ -44,6 +43,7 @@ function LogoIcons({ link, purpose }) {
 				<Image
 					bg={!hoverStatus ? "white" : "black"}
 					borderRadius="full"
+					w={{ base: "10vw", lg: "5vw" }}
 					src={!hoverStatus ? externalLinkIcon.imageSrc : externalLinkIcon.hoverImageSrc}
 					onMouseEnter={() => {
 						setHoverStatus(true);

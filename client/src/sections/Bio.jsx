@@ -48,7 +48,7 @@ function Intro() {
 
 				<CardBody py="0">
 					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={1.75}>
-						As mentioned, I'm Elias{" "}
+						As just mentioned, I'm Elias{" "}
 						<Text as="span" fontSize={{ base: "2xs", md: "xs" }}>
 							(Spector-Zabusky)
 						</Text>

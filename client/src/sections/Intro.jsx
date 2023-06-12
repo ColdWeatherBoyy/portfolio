@@ -61,7 +61,7 @@ function Intro() {
 					ref={sectionHeaderRef}
 				>
 					<CardHeader py={0}>
-						<Heading size={{ base: "xl", sm: "2xl" }}>Hey!</Heading>
+						<Heading size={{ base: "2xl", sm: "3xl" }}>Hey there!</Heading>
 					</CardHeader>
 					<Image
 						src={imageSrc}
@@ -93,11 +93,11 @@ function Intro() {
 				<CardBody py={0}>
 					<Flex height="100%" direction="column" justify="space-evenly">
 						<Text fontSize={{ base: "sm", md: "md" }} maxW="50%">
-							Now that I have your attention...
+							You made it! And now that I have your attention...
 						</Text>
 						<Text alignSelf="center" fontSize={{ base: "sm", sm: "md" }}>
 							I'm{" "}
-							<Text as="span" color={accentColor} fontSize={{ base: "xl", sm: "3xl" }}>
+							<Text as="span" fontSize={{ base: "xl", sm: "3xl" }} as="b">
 								{" "}
 								Elias{" "}
 							</Text>
