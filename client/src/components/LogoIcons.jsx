@@ -26,6 +26,7 @@ function LogoIcons({ link, purpose }) {
 			borderRadius="full"
 			alignItems="center"
 			justifyContent="center"
+			aria-label={purpose === "github" ? "Github link" : "External link"}
 			isExternal
 		>
 			{/* Depending on the purpose prop, renders one or the other icon set from the above constants */}
@@ -42,6 +43,7 @@ function LogoIcons({ link, purpose }) {
 					onMouseLeave={() => {
 						setHoverStatus(false);
 					}}
+					alt="Github icon"
 				/>
 			) : (
 				<Image
@@ -56,6 +58,7 @@ function LogoIcons({ link, purpose }) {
 					onMouseLeave={() => {
 						setHoverStatus(false);
 					}}
+					alt="External link icon"
 				/>
 			)}
 		</Link>
