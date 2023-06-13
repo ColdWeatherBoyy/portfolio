@@ -9,11 +9,11 @@ const PORT = process.env.PORT || 3001;
 app.use(urlencoded({ extended: true }));
 app.use(json());
 
+app.use(static(join(__dirname, "..", "client", "dist")));
+
 app.get("/", (req, res) => {
 	res.sendFile(join(__dirname, "..", "client", "dist", "index.html"));
 });
-
-app.use(static(join(__dirname, "..", "client", "dist")));
 
 app.listen(PORT, () => {
 	console.log(`Server listening on ${PORT} with database connected`);
