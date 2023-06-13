@@ -31,7 +31,7 @@ function ProjectDescription({
 			{isLargerThanLg ? (
 				<> </>
 			) : (
-				<Flex w="100%" justify="center">
+				<Flex w="100%" justify="center" py={2}>
 					<Flex
 						bg={bgColor}
 						borderRadius="full"
@@ -45,7 +45,7 @@ function ProjectDescription({
 						_active={{ boxShadow: "none" }}
 						transition="box-shadow 0.3s"
 					>
-						<Text textAlign="center" color={textColor} fontSize="3xl">
+						<Text textAlign="center" color={textColor} fontSize="2xl">
 							{name}
 						</Text>
 						<InfoOutlineIcon bg="white" borderRadius="full" boxSize={8} />
