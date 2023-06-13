@@ -55,7 +55,8 @@ function Intro() {
 						, a web developer working with the MERN stack, and a recent graduate of
 						Columbia Engineering's Coding Boot Camp. I'm also a musician (click my photo
 						to see!). I'm passionate about building things that are useful and exciting
-						and have a strong interest in backend development, databases, and AI.
+						and have a strong interest in backend development, product work, databases,
+						and AI.
 					</Text>
 				</CardBody>
 			</Card>

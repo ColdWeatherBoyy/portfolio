@@ -21,7 +21,7 @@ export const projects = [
 		src: "/images/RectTemplateScreenshot.png",
 		thumbnailSrc: "/images/RectTemplateScreenshotThumbnail.png",
 		name: "Vite React Template",
-		deployedLink: "https://coldweatherboyy.github.io/vite-template/",
+		deployedLink: "https://template-test-1.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/vite-template",
 		description:
 			"A template for MERN stack projects using Vite, set up with JWT preconfigured.",

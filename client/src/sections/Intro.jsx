@@ -16,7 +16,7 @@ function Intro() {
 	// import of themeContext to detect which color theme to use
 	const { setAlternateTheme, alternateTheme, light, dark } = useContext(themeContext);
 	// import of headerHeightContext to determine the height of this card header and pass it to the other card header in Bio
-	const { headerHeight, setHeaderHeight } = useContext(headerHeightContext);
+	const { setHeaderHeight } = useContext(headerHeightContext);
 
 	// Constants for text and background colors, depending on the theme
 	const textColor = alternateTheme ? dark.text : light.text;
@@ -60,6 +60,7 @@ function Intro() {
 				boxShadow="dark-lg"
 				pt={2}
 				pb={3}
+				width="100%"
 			>
 				<Grid
 					templateColumns="repeat(2, 1fr)"
