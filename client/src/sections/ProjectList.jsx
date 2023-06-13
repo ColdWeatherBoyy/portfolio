@@ -164,7 +164,7 @@ const ProjectList = () => {
 							{projects.map((image, index) => (
 								<Image
 									key={index}
-									src={image.src}
+									src={image.thumbnailSrc}
 									alt={`Thumbnail ${index}`}
 									aspectRatio="1 / 1"
 									boxSize="8%"

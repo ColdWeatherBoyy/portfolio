@@ -1,6 +1,7 @@
 export const projects = [
 	{
 		src: "/images/RectFRAiMEScreenshot.png",
+		thumbnailSrc: "/images/RectFRAiMEScreenshotThumbnail.png",
 		name: "FRAiME",
 		deployedLink: "https://github.com",
 		repoLink: "https://github.com",
@@ -9,6 +10,7 @@ export const projects = [
 	},
 	{
 		src: "/images/RectDadaScreenshot.png",
+		thumbnailSrc: "/images/RectDadaScreenshotThumbnail.png",
 		name: "Dada Art Museum",
 		deployedLink: "https://dada-museum.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
@@ -17,6 +19,7 @@ export const projects = [
 	},
 	{
 		src: "/images/RectTemplateScreenshot.png",
+		thumbnailSrc: "/images/RectTemplateScreenshotThumbnail.png",
 		name: "Vite React Template",
 		deployedLink: "https://coldweatherboyy.github.io/vite-template/",
 		repoLink: "https://github.com/ColdWeatherBoyy/vite-template",
@@ -25,6 +28,7 @@ export const projects = [
 	},
 	{
 		src: "/images/RectPortfolioScreenshot.png",
+		thumbnailSrc: "/images/RectPortfolioScreenshotThumbnail.png",
 		name: "Portfolio",
 		deployedLink: "https://github.com",
 		repoLink: "https://github.com",
@@ -33,6 +37,7 @@ export const projects = [
 	},
 	{
 		src: "/images/RectDeadInsideScreenshot.png",
+		thumbnailSrc: "/images/RectDeadInsideScreenshotThumbnail.png",
 		name: "Dead Inside Games",
 		deployedLink: "https://dead-inside-games.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/dead-inside-games",
@@ -41,6 +46,7 @@ export const projects = [
 	},
 	{
 		src: "/images/RectCitySoundsScreenshot.png",
+		thumbnailSrc: "/images/RectCitySoundsScreenshotThumbnail.png",
 		name: "City Sounds",
 		deployedLink: "https://city-sounds-esz.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/city-sounds",
@@ -49,6 +55,7 @@ export const projects = [
 	},
 	{
 		src: "/images/RectTweeterScreenshot.png",
+		thumbnailSrc: "/images/RectTweeterScreenshotThumbnail.png",
 		name: "Tweeter",
 		deployedLink: "https://tweeter-usk.herokuapp.com/",
 		repoLink: "https://github.com/BobbyCharms/tweeter",
