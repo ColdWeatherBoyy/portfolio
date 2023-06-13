@@ -107,6 +107,7 @@ const ProjectList = () => {
 								opacity=".85"
 								_hover={{ opacity: "1" }}
 								_active={{ opacity: "1" }}
+								loading="lazy"
 							/>
 							{isLargerThanLg ? (
 								<ProjectDescription
