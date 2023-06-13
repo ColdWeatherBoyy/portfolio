@@ -15,8 +15,6 @@ app.get("/", (req, res) => {
 
 app.use(static(join(__dirname, "..", "client", "dist")));
 
-app.use(require("./routes"));
-
 app.listen(PORT, () => {
 	console.log(`Server listening on ${PORT} with database connected`);
 });

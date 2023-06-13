@@ -67,7 +67,7 @@ function Intro() {
 						onClick={() => setAlternateTheme(!alternateTheme)}
 						alt="Picture of Elias"
 						borderRadius="100%"
-						maxW="25%"
+						maxW={{ base: "35%", lg: "35%" }}
 						cursor="pointer"
 						_hover={{
 							transform: "scale(1.03)",
