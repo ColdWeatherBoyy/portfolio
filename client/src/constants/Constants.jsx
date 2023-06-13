@@ -6,7 +6,7 @@ export const projects = [
 		deployedLink: "https://github.com",
 		repoLink: "https://github.com",
 		description:
-			"An eCommerce site using OpenAI's text-to-image generator API to allow users to create their own bespoke art and order it as a print. In development. MERN stack with Next.JS",
+			"eCommerce site in development; leverages OpenAI’s API for Dall-E. Users will generate bespoke art that they can then order prints of. Future features include selectable preprompts, finetuning prompts, and print API connection. Co-founder and lead developer.",
 	},
 	{
 		src: "/images/RectDadaScreenshot.png",
@@ -15,7 +15,7 @@ export const projects = [
 		deployedLink: "https://dada-museum.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
 		description:
-			"A sample homepage for a Dada art museum, with API calls for images and some interactivity. Built with React, Vite, and Chakra UI.",
+			"Proof of concept showcase piece. Co-designed and implemented UI for a museum’s homepage, built with Node, React, Express, and Chakra UI.",
 	},
 	{
 		src: "/images/RectTemplateScreenshot.png",
@@ -24,7 +24,7 @@ export const projects = [
 		deployedLink: "https://template-test-1.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/vite-template",
 		description:
-			"A template for MERN stack projects using Vite, set up with JWT preconfigured.",
+			"A template for MERN applications, with basic authorization capabilities baked in using JSON Web Token and a connection to a MongoDB preconfigured. Built with MERN stack, with MongoDB, React Router, DotEnv, Bcrypt, and JSON Web Token.",
 	},
 	{
 		src: "/images/RectPortfolioScreenshot.png",
@@ -42,7 +42,7 @@ export const projects = [
 		deployedLink: "https://dead-inside-games.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/dead-inside-games",
 		description:
-			"Class project: retro game site with login/signup capability and Minesweeper. Built with Node.js, Express, Sequelize, Handlebars, and Pixi.js",
+			"Class project: retro game site with login/signup capability and a group-designed version of Minesweeper. Built with Node.js, Express, Sequelize, Handlebars, and Pixi.js. Took on role of tech lead/project manager.",
 	},
 	{
 		src: "/images/RectCitySoundsScreenshot.png",
@@ -51,7 +51,7 @@ export const projects = [
 		deployedLink: "https://city-sounds-esz.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/city-sounds",
 		description:
-			"Class project (with server added on for cors policty): vanilla JS, HTML, and CSS, practicing API calls. Allows the user to search the top songs by country, as determined by Deezer.",
+			"Class project: vanilla JS, HTML, and CSS, practicing API calls. Allows the user to search the top songs by country, as determined by Deezer. Took on role of tech lead/project manager. Later, individually added on a backend server for a production-ready cors policy solution.",
 	},
 	{
 		src: "/images/RectTweeterScreenshot.png",
@@ -60,6 +60,6 @@ export const projects = [
 		deployedLink: "https://tweeter-usk.herokuapp.com/",
 		repoLink: "https://github.com/BobbyCharms/tweeter",
 		description:
-			"Class project: Twitter clone still in development, built with MERN stack and GraphQL.",
+			"Class project: Nearly complete, Twitter-inspired website, built with MERN stack and GraphQL. Took on role of tech lead/project manager.",
 	},
 ];

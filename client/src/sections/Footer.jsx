@@ -13,10 +13,10 @@ function Footer() {
 
 	// Function to handle resume download
 	const handleResumeDownload = () => {
-		const fileUrl = "/images/biopic.jpg";
+		const fileUrl = "/assets/EliasSZ_Resume_Portfolio.pdf";
 		const link = document.createElement("a");
 		link.href = fileUrl;
-		link.download = "biopic.jpg";
+		link.download = "EliasSZ_Resume_Portfolio.pdf";
 		link.click();
 	};
 
