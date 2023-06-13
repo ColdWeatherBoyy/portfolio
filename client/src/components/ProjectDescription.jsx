@@ -1,10 +1,25 @@
-import React, { useContext } from "react";
-import { Flex, Text, useBreakpointValue } from "@chakra-ui/react";
+import React, { useState, useContext, useEffect } from "react";
+import {
+	Flex,
+	Text,
+	Box,
+	useBreakpointValue,
+	useDisclosure,
+	Slide,
+} from "@chakra-ui/react";
+import { InfoOutlineIcon } from "@chakra-ui/icons";
 import { themeContext } from "../context/context";
 
 import LogoIcons from "./LogoIcons";
 
-function ProjectDescription({ repoLink, deployedLink, name }) {
+function ProjectDescription({
+	repoLink,
+	deployedLink,
+	name,
+	description,
+	isOpen,
+	onToggle,
+}) {
 	const { alternateTheme, light, dark } = useContext(themeContext);
 	const isLargerThanLg = useBreakpointValue({ base: false, lg: true });
 
@@ -24,10 +39,16 @@ function ProjectDescription({ repoLink, deployedLink, name }) {
 						justify="center"
 						align="center"
 						boxShadow="dark-lg"
+						gap={6}
+						onClick={onToggle}
+						cursor="pointer"
+						_active={{ boxShadow: "none" }}
+						transition="box-shadow 0.3s"
 					>
 						<Text textAlign="center" color={textColor} fontSize="3xl">
 							{name}
 						</Text>
+						<InfoOutlineIcon bg="white" borderRadius="full" boxSize={8} />
 					</Flex>
 				</Flex>
 			)}
@@ -47,18 +68,22 @@ function ProjectDescription({ repoLink, deployedLink, name }) {
 						bg={bgColor}
 						borderRadius="full"
 						px={3}
-						py={2}
+						py={1}
 						justify="center"
 						align="center"
-						// w={{ base: "35%", lg: "auto" }}
 						maxW="65%"
 						minW="45%"
-						w="fit-content"
 						boxShadow="dark-lg"
+						gap={6}
+						onClick={onToggle}
+						cursor="pointer"
+						_active={{ boxShadow: "none" }}
+						transition="box-shadow 0.3s"
 					>
-						<Text textAlign="center" color={textColor} fontSize="3xl" lineHeight="95%">
+						<Text textAlign="center" color={textColor} fontSize="3xl" lineHeight="100%">
 							{name}
 						</Text>
+						<InfoOutlineIcon bg="white" borderRadius="full" boxSize={8} />
 					</Flex>
 				) : (
 					<></>
@@ -66,6 +91,11 @@ function ProjectDescription({ repoLink, deployedLink, name }) {
 
 				<LogoIcons link={deployedLink} purpose="deployed" />
 			</Flex>
+			<Slide direction="bottom" in={isOpen} style={{ zIndex: 10 }}>
+				<Box p="40px" color={textColor} bg={bgColor} mt="4" rounded="dark-lg" shadow="md">
+					{description}
+				</Box>
+			</Slide>
 		</>
 	);
 }

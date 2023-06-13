@@ -1,6 +1,8 @@
 import React, { useState, useContext } from "react";
+
 import { themeContext } from "../context/context";
 import {
+	useDisclosure,
 	Box,
 	Image,
 	Heading,
@@ -14,6 +16,8 @@ import ProjectDescription from "../components/ProjectDescription";
 
 const ImageCarousel = () => {
 	const isLargerThanLg = useBreakpointValue({ base: false, lg: true });
+	const { isOpen, onToggle } = useDisclosure();
+
 	const { alternateTheme, light, dark } = useContext(themeContext);
 
 	const textColor = alternateTheme ? dark.text : light.text;
@@ -26,12 +30,26 @@ const ImageCarousel = () => {
 		setCurrentImageIndex((prevIndex) =>
 			prevIndex === 0 ? projects.length - 1 : prevIndex - 1
 		);
+
+		if (isOpen) {
+			onToggle();
+		}
 	};
 
 	const nextImage = () => {
 		setCurrentImageIndex((prevIndex) =>
 			prevIndex === projects.length - 1 ? 0 : prevIndex + 1
 		);
+		if (isOpen) {
+			onToggle();
+		}
+	};
+
+	const setImage = (index) => {
+		setCurrentImageIndex(index);
+		if (isOpen) {
+			onToggle();
+		}
 	};
 
 	const projects = [
@@ -40,42 +58,56 @@ const ImageCarousel = () => {
 			name: "FRAiME",
 			deployedLink: "https://github.com",
 			repoLink: "https://github.com",
+			description:
+				"An eCommerce site using OpenAI's text-to-image generator API to allow users to create their own bespoke art and order it as a print. In development. MERN stack with Next.JS",
 		},
 		{
 			src: "/images/RectDadaScreenshot.png",
 			name: "Dada Art Museum",
 			deployedLink: "https://dada-museum.herokuapp.com/",
 			repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
+			description:
+				"A sample homepage for a Dada art museum, with API calls for images and some interactivity. Built with React, Vite, and Chakra UI.",
 		},
 		{
 			src: "/images/RectTemplateScreenshot.png",
 			name: "Vite React Template",
 			deployedLink: "https://coldweatherboyy.github.io/vite-template/",
 			repoLink: "https://github.com/ColdWeatherBoyy/vite-template",
+			description:
+				"A template for MERN stack projects using Vite, set up with JWT preconfigured.",
 		},
 		{
-			src: "/images/RectPortfolioTempScreenshot.png",
+			src: "/images/RectPortfolioScreenshot.png",
 			name: "Portfolio",
 			deployedLink: "https://github.com",
 			repoLink: "https://github.com",
+			description:
+				"This portfolio that you're looking at right now! (Using self-built Vite Template and Chakra UI).",
 		},
 		{
 			src: "/images/RectDeadInsideScreenshot.png",
 			name: "Dead Inside Games",
 			deployedLink: "https://dead-inside-games.herokuapp.com/",
 			repoLink: "https://github.com/ColdWeatherBoyy/dead-inside-games",
+			description:
+				"Class project: retro game site with login/signup capability and Minesweeper. Built with Node.js, Express, Sequelize, Handlebars, and Pixi.js",
 		},
 		{
 			src: "/images/RectCitySoundsScreenshot.png",
 			name: "City Sounds",
-			deployedLink: "https://coldweatherboyy.github.io/city-sounds/",
+			deployedLink: "https://city-sounds-esz.herokuapp.com/",
 			repoLink: "https://github.com/ColdWeatherBoyy/city-sounds",
+			description:
+				"Class project (with server added on for cors policty): vanilla JS, HTML, and CSS, practicing API calls. Allows user search top songs by country (as determined by Deezer).",
 		},
 		{
 			src: "/images/RectTweeterScreenshot.png",
 			name: "Tweeter",
 			deployedLink: "https://tweeter-usk.herokuapp.com/",
 			repoLink: "https://github.com/BobbyCharms/tweeter",
+			description:
+				"Class project: Twitter clone still in development, built with MERN stack and GraphQL.",
 		},
 	];
 
@@ -137,6 +169,9 @@ const ImageCarousel = () => {
 									repoLink={projects[currentImageIndex].repoLink}
 									deployedLink={projects[currentImageIndex].deployedLink}
 									name={projects[currentImageIndex].name}
+									description={projects[currentImageIndex].description}
+									isOpen={isOpen}
+									onToggle={onToggle}
 								/>
 							) : (
 								<></>
@@ -166,6 +201,9 @@ const ImageCarousel = () => {
 							repoLink={projects[currentImageIndex].repoLink}
 							deployedLink={projects[currentImageIndex].deployedLink}
 							name={projects[currentImageIndex].name}
+							description={projects[currentImageIndex].description}
+							isOpen={isOpen}
+							onToggle={onToggle}
 						/>
 					)}
 					<Flex justify="center">
@@ -202,7 +240,7 @@ const ImageCarousel = () => {
 										transform: "scale(1)",
 									}}
 									transition="box-shadow 0.3s, border 0.3s, transform 0.3s"
-									onClick={() => setCurrentImageIndex(index)}
+									onClick={() => setImage(index)}
 								/>
 							))}
 						</Flex>

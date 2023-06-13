@@ -4,18 +4,15 @@ import {
 	Card,
 	CardHeader,
 	CardBody,
-	CardFooter,
 	Flex,
 	Text,
 	Heading,
 	Divider,
-	Image,
-	Grid,
 } from "@chakra-ui/react";
 
 function Intro() {
-	const { setAlternateTheme, alternateTheme, light, dark } = useContext(themeContext);
-	const { headerHeight, setHeaderHeight } = useContext(headerHeightContext);
+	const { alternateTheme, light, dark } = useContext(themeContext);
+	const { headerHeight } = useContext(headerHeightContext);
 
 	const textColor = alternateTheme ? dark.text : light.text;
 	const bgColor = alternateTheme ? dark.bg : light.bg;

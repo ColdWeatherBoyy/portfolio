@@ -4,14 +4,12 @@ import {
 	Card,
 	CardHeader,
 	CardBody,
-	CardFooter,
 	Flex,
 	Text,
 	Heading,
 	Divider,
 	Image,
 	Grid,
-	Box,
 } from "@chakra-ui/react";
 
 function Intro() {
@@ -97,7 +95,7 @@ function Intro() {
 						</Text>
 						<Text alignSelf="center" fontSize={{ base: "sm", sm: "md" }}>
 							I'm{" "}
-							<Text as="span" fontSize={{ base: "xl", sm: "3xl" }} as="b">
+							<Text as="b" fontSize={{ base: "xl", sm: "3xl" }}>
 								{" "}
 								Elias{" "}
 							</Text>
