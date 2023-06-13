@@ -10,6 +10,7 @@ import "@fontsource/inter/400.css";
 import theme from "./theme/theme.js";
 import { ContextProvider } from "./context/context";
 
+// Create a router
 const router = createBrowserRouter([
 	{
 		path: "/",

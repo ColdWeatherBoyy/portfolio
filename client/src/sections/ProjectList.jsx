@@ -1,5 +1,4 @@
 import React, { useState, useContext } from "react";
-
 import { themeContext } from "../context/context";
 import {
 	useDisclosure,
@@ -13,19 +12,26 @@ import {
 } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import ProjectDescription from "../components/ProjectDescription";
+import { projects } from "./constants/Constants";
 
-const ImageCarousel = () => {
+const ProjectList = () => {
+	// use of useBreakpointValue to determine display size
 	const isLargerThanLg = useBreakpointValue({ base: false, lg: true });
+	// use of useDisclosure hook for slide transition. Passed as prop to ProjectDescription component, with a conditional use of onToggle on the IconButton components
 	const { isOpen, onToggle } = useDisclosure();
 
+	// Import of themeContext to detect which color theme to use
 	const { alternateTheme, light, dark } = useContext(themeContext);
 
+	// Constants for text and background colors, depending on the theme
 	const textColor = alternateTheme ? dark.text : light.text;
 	const bgColor = alternateTheme ? dark.bg : light.bg;
 	const accentColor = alternateTheme ? dark.accentColor : light.accentColor;
 
+	// State for current image index
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+	// Functions to go to previous image, next image, or selected image, as well as to activate onToggle if the slide is open
 	const prevImage = () => {
 		setCurrentImageIndex((prevIndex) =>
 			prevIndex === 0 ? projects.length - 1 : prevIndex - 1
@@ -35,7 +41,6 @@ const ImageCarousel = () => {
 			onToggle();
 		}
 	};
-
 	const nextImage = () => {
 		setCurrentImageIndex((prevIndex) =>
 			prevIndex === projects.length - 1 ? 0 : prevIndex + 1
@@ -44,72 +49,12 @@ const ImageCarousel = () => {
 			onToggle();
 		}
 	};
-
 	const setImage = (index) => {
 		setCurrentImageIndex(index);
 		if (isOpen) {
 			onToggle();
 		}
 	};
-
-	const projects = [
-		{
-			src: "/images/RectFRAiMEScreenshot.png",
-			name: "FRAiME",
-			deployedLink: "https://github.com",
-			repoLink: "https://github.com",
-			description:
-				"An eCommerce site using OpenAI's text-to-image generator API to allow users to create their own bespoke art and order it as a print. In development. MERN stack with Next.JS",
-		},
-		{
-			src: "/images/RectDadaScreenshot.png",
-			name: "Dada Art Museum",
-			deployedLink: "https://dada-museum.herokuapp.com/",
-			repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
-			description:
-				"A sample homepage for a Dada art museum, with API calls for images and some interactivity. Built with React, Vite, and Chakra UI.",
-		},
-		{
-			src: "/images/RectTemplateScreenshot.png",
-			name: "Vite React Template",
-			deployedLink: "https://coldweatherboyy.github.io/vite-template/",
-			repoLink: "https://github.com/ColdWeatherBoyy/vite-template",
-			description:
-				"A template for MERN stack projects using Vite, set up with JWT preconfigured.",
-		},
-		{
-			src: "/images/RectPortfolioScreenshot.png",
-			name: "Portfolio",
-			deployedLink: "https://github.com",
-			repoLink: "https://github.com",
-			description:
-				"This portfolio that you're looking at right now! (Using self-built Vite Template and Chakra UI).",
-		},
-		{
-			src: "/images/RectDeadInsideScreenshot.png",
-			name: "Dead Inside Games",
-			deployedLink: "https://dead-inside-games.herokuapp.com/",
-			repoLink: "https://github.com/ColdWeatherBoyy/dead-inside-games",
-			description:
-				"Class project: retro game site with login/signup capability and Minesweeper. Built with Node.js, Express, Sequelize, Handlebars, and Pixi.js",
-		},
-		{
-			src: "/images/RectCitySoundsScreenshot.png",
-			name: "City Sounds",
-			deployedLink: "https://city-sounds-esz.herokuapp.com/",
-			repoLink: "https://github.com/ColdWeatherBoyy/city-sounds",
-			description:
-				"Class project (with server added on for cors policty): vanilla JS, HTML, and CSS, practicing API calls. Allows user search top songs by country (as determined by Deezer).",
-		},
-		{
-			src: "/images/RectTweeterScreenshot.png",
-			name: "Tweeter",
-			deployedLink: "https://tweeter-usk.herokuapp.com/",
-			repoLink: "https://github.com/BobbyCharms/tweeter",
-			description:
-				"Class project: Twitter clone still in development, built with MERN stack and GraphQL.",
-		},
-	];
 
 	return (
 		<Flex width="100%" justify="center">
@@ -192,6 +137,7 @@ const ImageCarousel = () => {
 							}}
 						/>
 					</Flex>
+					{/* Use of breakpoint value for responsive display differences */}
 					{isLargerThanLg ? (
 						<></>
 					) : (
@@ -213,6 +159,7 @@ const ImageCarousel = () => {
 							boxShadow="inset 5px 5px 12px rgba(0, 0, 0, 0.2), inset -5px -5px 12px rgba(255, 255, 255, 0.4)"
 							gap={2}
 						>
+							{/* image array for all project options */}
 							{projects.map((image, index) => (
 								<Image
 									key={index}
@@ -249,4 +196,4 @@ const ImageCarousel = () => {
 	);
 };
 
-export default ImageCarousel;
+export default ProjectList;

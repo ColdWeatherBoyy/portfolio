@@ -11,9 +11,12 @@ import {
 } from "@chakra-ui/react";
 
 function Intro() {
+	// import of themeContext to detect which color theme to use
 	const { alternateTheme, light, dark } = useContext(themeContext);
+	// import of headerHeightContext to determine the height of the header, to be base height of CardHeading on dynamic sizing of other, paired component (Intro)
 	const { headerHeight } = useContext(headerHeightContext);
 
+	// Constants for text and background colors, depending on the theme
 	const textColor = alternateTheme ? dark.text : light.text;
 	const bgColor = alternateTheme ? dark.bg : light.bg;
 	const accentColor = alternateTheme ? dark.accentColor : light.accentColor;

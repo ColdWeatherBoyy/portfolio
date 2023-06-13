@@ -3,10 +3,11 @@ import Header from "./sections/Header";
 import Intro from "./sections/Intro";
 import Bio from "./sections/Bio";
 import ProjectList from "./sections/ProjectList";
-import { Box, Grid, Flex } from "@chakra-ui/react";
+import { Grid, Flex } from "@chakra-ui/react";
 
 function App() {
 	return (
+		// Grid layout for the entire app
 		<Grid templateColumns="1fr" templateRows="auto" bg="white" gap={10}>
 			<Header />
 			<Flex

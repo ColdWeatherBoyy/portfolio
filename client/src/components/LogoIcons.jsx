@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link, Image, AspectRatio } from "@chakra-ui/react";
 
 function LogoIcons({ link, purpose }) {
+	// State to keep track of hover status
 	const [hoverStatus, setHoverStatus] = useState(false);
 
+	// Constants for icons, to be used in the Image component for either theme
 	const githubIcon = {
 		imageSrc: "/images/github-mark.svg",
 		hoverImageSrc: "/images/github-mark-white.svg",
@@ -15,6 +17,7 @@ function LogoIcons({ link, purpose }) {
 	};
 
 	return (
+		// External Link wrapping an Image component
 		<Link
 			href={link}
 			boxShadow="xl"
@@ -24,13 +27,14 @@ function LogoIcons({ link, purpose }) {
 			alignItems="center"
 			justifyContent="center"
 			isExternal
-			// transform={{ base: "scale(.5)", lg: "scale(.8)" }}
 		>
+			{/* Depending on the purpose prop, renders one or the other icon set from the above constants */}
 			{purpose === "github" ? (
 				<Image
 					bg={!hoverStatus ? "white" : "black"}
 					borderRadius="full"
 					w={{ base: "10vw", lg: "5vw" }}
+					// use of hoverStatus state to determine which icon to render
 					src={!hoverStatus ? githubIcon.imageSrc : githubIcon.hoverImageSrc}
 					onMouseEnter={() => {
 						setHoverStatus(true);
@@ -44,6 +48,7 @@ function LogoIcons({ link, purpose }) {
 					bg={!hoverStatus ? "white" : "black"}
 					borderRadius="full"
 					w={{ base: "10vw", lg: "5vw" }}
+					// use of hoverStatus state to determine which icon to render
 					src={!hoverStatus ? externalLinkIcon.imageSrc : externalLinkIcon.hoverImageSrc}
 					onMouseEnter={() => {
 						setHoverStatus(true);

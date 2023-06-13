@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Flex, Text, Box, useBreakpointValue, Slide } from "@chakra-ui/react";
 import { InfoOutlineIcon } from "@chakra-ui/icons";
 import { themeContext } from "../context/context";
@@ -13,14 +13,18 @@ function ProjectDescription({
 	isOpen,
 	onToggle,
 }) {
+	// Import of themeContext to detect which color theme to use
 	const { alternateTheme, light, dark } = useContext(themeContext);
+	// Use of Chakra's useBreakpointValue hook to determine if the screen is larger than its lg breakpoint
 	const isLargerThanLg = useBreakpointValue({ base: false, lg: true });
 
+	// Constants for text and background colors, depending on the theme
 	const textColor = alternateTheme ? dark.text : light.text;
 	const bgColor = alternateTheme ? dark.bg : light.bg;
 
 	return (
 		<>
+			{/* Conditionally rendering the display depending on size of screen. First option for small screens */}
 			{isLargerThanLg ? (
 				<> </>
 			) : (
@@ -55,7 +59,9 @@ function ProjectDescription({
 				justify="space-between"
 				align={{ base: "auto", lg: "center" }}
 			>
+				{/* Use of LogoIcons component */}
 				<LogoIcons link={repoLink} purpose="github" />
+				{/* Second option for large screens */}
 				{isLargerThanLg ? (
 					<Flex
 						bg={bgColor}
@@ -81,9 +87,10 @@ function ProjectDescription({
 				) : (
 					<></>
 				)}
-
+				{/* Use of LogoIcons component */}
 				<LogoIcons link={deployedLink} purpose="deployed" />
 			</Flex>
+			{/* Chakra's built in Slide component for transition animation */}
 			<Slide direction="bottom" in={isOpen} style={{ zIndex: 10 }}>
 				<Box p="40px" color={textColor} bg={bgColor} mt="4" rounded="dark-lg" shadow="md">
 					{description}

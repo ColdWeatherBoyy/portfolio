@@ -13,33 +13,42 @@ import {
 } from "@chakra-ui/react";
 
 function Intro() {
+	// import of themeContext to detect which color theme to use
 	const { setAlternateTheme, alternateTheme, light, dark } = useContext(themeContext);
+	// import of headerHeightContext to determine the height of this card header and pass it to the other card header in Bio
 	const { headerHeight, setHeaderHeight } = useContext(headerHeightContext);
 
+	// Constants for text and background colors, depending on the theme
 	const textColor = alternateTheme ? dark.text : light.text;
 	const bgColor = alternateTheme ? dark.bg : light.bg;
 	const imageSrc = alternateTheme ? dark.image : light.image;
 	const accentColor = alternateTheme ? dark.accentColor : light.accentColor;
 
+	// Ref for this card header, to determine its height
 	const sectionHeaderRef = useRef(null);
 
+	// UseEffect on page load to detect and set context for header height
 	useEffect(() => {
 		function handleResize() {
 			setHeaderHeight(sectionHeaderRef.current.offsetHeight);
 		}
 
+		// call handleResize on page load
 		handleResize();
 
+		// event listener for window resize, which would change the height of the header
 		window.addEventListener("resize", handleResize);
 
+		// cleanup function to remove event listener
 		return () => {
 			window.removeEventListener("resize", handleResize);
 		};
 	}, []);
 
-	useEffect(() => {
-		console.log(headerHeight);
-	}, [headerHeight]);
+	// useEffect to test headerHeight context
+	// useEffect(() => {
+	// 	console.log(headerHeight);
+	// }, [headerHeight]);
 
 	return (
 		<Flex width="100%">
@@ -63,7 +72,9 @@ function Intro() {
 					</CardHeader>
 					<Image
 						src={imageSrc}
+						// fail safe to set headerHeight to height of header if image loads late and changes it
 						onLoad={() => setHeaderHeight(sectionHeaderRef.current.offsetHeight)}
+						// onClick to toggle theme
 						onClick={() => setAlternateTheme(!alternateTheme)}
 						alt="Picture of Elias"
 						borderRadius="100%"

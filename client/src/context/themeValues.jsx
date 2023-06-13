@@ -1,3 +1,4 @@
+// Constants for color scheme
 export const light = {
 	image: "/images/biopic2.jpg",
 	bg: "#A39B8B",

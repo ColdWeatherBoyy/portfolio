@@ -1,5 +1,6 @@
 import React from "react";
 
+// 404 error page
 const ErrorPage = () => {
 	return (
 		<>
