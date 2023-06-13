@@ -30,8 +30,8 @@ export const projects = [
 		src: "/images/RectPortfolioScreenshot.png",
 		thumbnailSrc: "/images/RectPortfolioScreenshotThumbnail.png",
 		name: "Portfolio",
-		deployedLink: "https://github.com",
-		repoLink: "https://github.com",
+		deployedLink: "https://portfolio-esz.herokuapp.com/",
+		repoLink: "https://github.com/ColdWeatherBoyy/portfolio",
 		description:
 			"This portfolio that you're looking at right now! (Using self-built Vite Template and Chakra UI).",
 	},
