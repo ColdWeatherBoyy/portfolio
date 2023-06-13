@@ -1,12 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import {
-	Flex,
-	Text,
-	Box,
-	useBreakpointValue,
-	useDisclosure,
-	Slide,
-} from "@chakra-ui/react";
+import { Flex, Text, Box, useBreakpointValue, Slide } from "@chakra-ui/react";
 import { InfoOutlineIcon } from "@chakra-ui/icons";
 import { themeContext } from "../context/context";
 

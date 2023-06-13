@@ -146,9 +146,8 @@ const ImageCarousel = () => {
 							size={["xs", "md", "lg"]}
 							mr={["1", "2", "4"]}
 							aria-label="Next Image"
-							_hover={{ color: accentColor, transform: "scale(1.05)" }}
+							_hover={{ transform: "scale(1.05)" }}
 							_active={{
-								color: accentColor,
 								boxShadow: "inset 0px 0px 5px 5px rgba(0,0,0,0.5)",
 								transform: "scale(0.95)",
 							}}
@@ -186,9 +185,8 @@ const ImageCarousel = () => {
 							size={["xs", "md", "lg"]}
 							ml={["1", "2", "4"]}
 							aria-label="Next Image"
-							_hover={{ color: accentColor, transform: "scale(1.05)" }}
+							_hover={{ transform: "scale(1.05)" }}
 							_active={{
-								color: accentColor,
 								boxShadow: "inset 0px 0px 5px 5px rgba(0,0,0,0.5)",
 								transform: "scale(0.95)",
 							}}
