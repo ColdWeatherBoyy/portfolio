@@ -6,7 +6,7 @@ export const projects = [
 		deployedLink: "https://github.com",
 		repoLink: "https://github.com",
 		description:
-			"eCommerce site in development; leverages OpenAI’s API for Dall-E. Users will generate bespoke art that they can then order prints of. Future features include selectable preprompts, finetuning prompts, and print API connection. Co-founder and lead developer.",
+			"Co-Founder and Lead Developer. eCommerce site in development; leverages OpenAI’s API for Dall-E and DaVinci. Users will generate bespoke art that they can then order prints of. Future features include selectable preprompts, finetuning prompts, and print API connection.",
 	},
 	{
 		src: "/images/RectDadaScreenshot.png",
@@ -15,7 +15,7 @@ export const projects = [
 		deployedLink: "https://dada-museum.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
 		description:
-			"Proof of concept showcase piece. Co-designed and implemented UI for a museum’s homepage, built with Node, React, Express, and Chakra UI.",
+			"Lead Developer and UI Designer. Proof of concept showcase piece. Co-designed and implemented UI for a museum’s homepage; built Current Exhibits and Featured Artist section; collaborated on other homepage code.",
 	},
 	{
 		src: "/images/RectTemplateScreenshot.png",
@@ -24,7 +24,7 @@ export const projects = [
 		deployedLink: "https://template-test-1.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/vite-template",
 		description:
-			"A template for MERN applications, with basic authorization capabilities baked in using JSON Web Token and a connection to a MongoDB preconfigured. Built with MERN stack, with MongoDB, React Router, DotEnv, Bcrypt, and JSON Web Token.",
+			"Lead Engineer. A template for MERN applications, with basic authorization capabilities baked in using JSON Web Token and a connection to a MongoDB preconfigured. Testable with an app like Insomnia.",
 	},
 	{
 		src: "/images/RectPortfolioScreenshot.png",
