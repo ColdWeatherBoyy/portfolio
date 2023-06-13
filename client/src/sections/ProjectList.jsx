@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import ProjectDescription from "../components/ProjectDescription";
-import { projects } from "../Constants/constants";
+import { projects } from "../constants/Constants";
 
 const ProjectList = () => {
 	// use of useBreakpointValue to determine display size
