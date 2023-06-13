@@ -33,7 +33,7 @@ export const projects = [
 		deployedLink: "https://portfolio-esz.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/portfolio",
 		description:
-			"This portfolio that you're looking at right now! (Using self-built Vite Template and Chakra UI).",
+			"This portfolio that you're looking at right now! Built using my own Vite Template and Chakra UI.",
 	},
 	{
 		src: "/images/RectDeadInsideScreenshot.png",
@@ -51,7 +51,7 @@ export const projects = [
 		deployedLink: "https://city-sounds-esz.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/city-sounds",
 		description:
-			"Class project (with server added on for cors policty): vanilla JS, HTML, and CSS, practicing API calls. Allows user search top songs by country (as determined by Deezer).",
+			"Class project (with server added on for cors policty): vanilla JS, HTML, and CSS, practicing API calls. Allows the user to search the top songs by country, as determined by Deezer.",
 	},
 	{
 		src: "/images/RectTweeterScreenshot.png",

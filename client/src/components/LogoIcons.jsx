@@ -32,6 +32,7 @@ function LogoIcons({ link, purpose }) {
 			{/* Depending on the purpose prop, renders one or the other icon set from the above constants */}
 			{purpose === "github" ? (
 				<Image
+					border={!hoverStatus ? "1px solid white" : "1px solid black"}
 					bg={!hoverStatus ? "white" : "black"}
 					borderRadius="full"
 					w={{ base: "10vw", lg: "5vw" }}
@@ -47,6 +48,7 @@ function LogoIcons({ link, purpose }) {
 				/>
 			) : (
 				<Image
+					border={!hoverStatus ? "1px solid black" : "1px solid white"}
 					bg={!hoverStatus ? "white" : "black"}
 					borderRadius="full"
 					w={{ base: "10vw", lg: "5vw" }}
