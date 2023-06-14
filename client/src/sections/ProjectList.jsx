@@ -151,7 +151,8 @@ const ProjectList = () => {
 							h="100%"
 							justify="space-evenly"
 							borderRadius="xl"
-							p={2}
+							px={2}
+							py={3}
 							boxShadow="inset 5px 5px 12px rgba(0, 0, 0, 0.2), inset -5px -5px 12px rgba(255, 255, 255, 0.4)"
 							gap={2}
 						>
