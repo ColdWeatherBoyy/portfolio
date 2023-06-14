@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Flex, Text, Box, useBreakpointValue, Slide } from "@chakra-ui/react";
 import { InfoOutlineIcon } from "@chakra-ui/icons";
 import { themeContext } from "../context/context";
-
 import LogoIcons from "./LogoIcons";
 
 function ProjectDescription({
@@ -14,13 +13,9 @@ function ProjectDescription({
 	onToggle,
 }) {
 	// Import of themeContext to detect which color theme to use
-	const { alternateTheme, light, dark } = useContext(themeContext);
+	const { textColor, bgColor } = useContext(themeContext);
 	// Use of Chakra's useBreakpointValue hook to determine if the screen is larger than its lg breakpoint
 	const isLargerThanLg = useBreakpointValue({ base: false, lg: true });
-
-	// Constants for text and background colors, depending on the theme
-	const textColor = alternateTheme ? dark.text : light.text;
-	const bgColor = alternateTheme ? dark.bg : light.bg;
 
 	return (
 		<>
@@ -91,7 +86,7 @@ function ProjectDescription({
 				<LogoIcons link={deployedLink} purpose="deployed" />
 			</Flex>
 			{/* Chakra's built in Slide component for transition animation */}
-			<Slide direction="bottom" in={isOpen} style={{ zIndex: 10 }}>
+			<Slide direction="bottom" in={isOpen} onClick={onToggle} style={{ zIndex: 10 }}>
 				<Box p="40px" color={textColor} bg={bgColor} mt="4" rounded="dark-lg" shadow="md">
 					{description}
 				</Box>

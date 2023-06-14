@@ -20,13 +20,8 @@ const ProjectList = () => {
 	// use of useDisclosure hook for slide transition. Passed as prop to ProjectDescription component, with a conditional use of onToggle on the IconButton components
 	const { isOpen, onToggle } = useDisclosure();
 
-	// Import of themeContext to detect which color theme to use
-	const { alternateTheme, light, dark } = useContext(themeContext);
-
-	// Constants for text and background colors, depending on the theme
-	const textColor = alternateTheme ? dark.text : light.text;
-	const bgColor = alternateTheme ? dark.bg : light.bg;
-	const accentColor = alternateTheme ? dark.accentColor : light.accentColor;
+	// Import of themeContext to detect which color theme to use and options for theme colorways
+	const { textColor, bgColor, accentColor } = useContext(themeContext);
 
 	// State for current image index
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);

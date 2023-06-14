@@ -1,20 +1,13 @@
 import React, { useState } from "react";
-import { Link, Image, AspectRatio } from "@chakra-ui/react";
+import { Link, Image } from "@chakra-ui/react";
+import { logoIcons } from "../constants/Constants";
 
 function LogoIcons({ link, purpose }) {
 	// State to keep track of hover status
 	const [hoverStatus, setHoverStatus] = useState(false);
 
-	// Constants for icons, to be used in the Image component for either theme
-	const githubIcon = {
-		imageSrc: "/images/github-mark.svg",
-		hoverImageSrc: "/images/github-mark-white.svg",
-	};
-
-	const externalLinkIcon = {
-		imageSrc: "/images/external-link-black.svg",
-		hoverImageSrc: "/images/external-link.svg",
-	};
+	// Depending on the purpose prop, defines icon constant one or the other icon set from the imported constants
+	const icon = purpose === "github" ? logoIcons.githubIcon : logoIcons.externalLinkIcon;
 
 	return (
 		// External Link wrapping an Image component
@@ -29,40 +22,21 @@ function LogoIcons({ link, purpose }) {
 			aria-label={purpose === "github" ? "Github link" : "External link"}
 			isExternal
 		>
-			{/* Depending on the purpose prop, renders one or the other icon set from the above constants */}
-			{purpose === "github" ? (
-				<Image
-					border={!hoverStatus ? "1px solid white" : "1px solid black"}
-					bg={!hoverStatus ? "white" : "black"}
-					borderRadius="full"
-					w={{ base: "10vw", lg: "5vw" }}
-					// use of hoverStatus state to determine which icon to render
-					src={!hoverStatus ? githubIcon.imageSrc : githubIcon.hoverImageSrc}
-					onMouseEnter={() => {
-						setHoverStatus(true);
-					}}
-					onMouseLeave={() => {
-						setHoverStatus(false);
-					}}
-					alt="Github icon"
-				/>
-			) : (
-				<Image
-					border={!hoverStatus ? "1px solid black" : "1px solid white"}
-					bg={!hoverStatus ? "white" : "black"}
-					borderRadius="full"
-					w={{ base: "10vw", lg: "5vw" }}
-					// use of hoverStatus state to determine which icon to render
-					src={!hoverStatus ? externalLinkIcon.imageSrc : externalLinkIcon.hoverImageSrc}
-					onMouseEnter={() => {
-						setHoverStatus(true);
-					}}
-					onMouseLeave={() => {
-						setHoverStatus(false);
-					}}
-					alt="External link icon"
-				/>
-			)}
+			<Image
+				border={!hoverStatus ? "1px solid white" : "1px solid black"}
+				bg={!hoverStatus ? "white" : "black"}
+				borderRadius="full"
+				w={{ base: "10vw", lg: "5vw" }}
+				// use of hoverStatus state to determine which icon set to render, utilizing constant above
+				src={!hoverStatus ? icon.imageSrc : icon.hoverImageSrc}
+				onMouseEnter={() => {
+					setHoverStatus(true);
+				}}
+				onMouseLeave={() => {
+					setHoverStatus(false);
+				}}
+				alt="Github icon"
+			/>
 		</Link>
 	);
 }

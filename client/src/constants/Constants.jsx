@@ -3,7 +3,7 @@ export const projects = [
 		src: "/images/RectFRAiMEScreenshot.png",
 		thumbnailSrc: "/images/RectFRAiMEScreenshotThumbnail.png",
 		name: "FRAiME",
-		deployedLink: "https://main.d23fexaftsczqw.amplifyapp.com/discovery",
+		deployedLink: "https://main.d23fexaftsczqw.amplifyapp.com/",
 		repoLink: "https://github.com/ColinSprows/Fraime/ ",
 		description:
 			"Co-Founder and Lead Developer. eCommerce site in development; leverages OpenAI’s API for Dall-E and DaVinci. Users will generate bespoke art that they can then order prints of. Future features include selectable preprompts, finetuning prompts, and print API connection.",
@@ -63,3 +63,15 @@ export const projects = [
 			"Class project: Nearly complete, Twitter-inspired website, built with MERN stack and GraphQL. Took on role of tech lead/project manager.",
 	},
 ];
+
+// Constants for icons, to be used in the Image component for either theme
+export const logoIcons = {
+	githubIcon: {
+		imageSrc: "/images/github-mark.svg",
+		hoverImageSrc: "/images/github-mark-white.svg",
+	},
+	externalLinkIcon: {
+		imageSrc: "/images/external-link-black.svg",
+		hoverImageSrc: "/images/external-link.svg",
+	},
+};

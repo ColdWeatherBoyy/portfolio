@@ -3,12 +3,8 @@ import { themeContext } from "../context/context";
 import { Box, Flex } from "@chakra-ui/react";
 
 function Header() {
-	// Import of themeContext to detect which color theme to use
-	const { alternateTheme, light, dark } = useContext(themeContext);
-
-	// Constants for text and background colors, depending on the theme
-	const textColor = alternateTheme ? dark.text : light.text;
-	const bgColor = alternateTheme ? dark.bg : light.bg;
+	// Import of themeContext to detect which color theme to use and options for theme colorways
+	const { textColor, bgColor } = useContext(themeContext);
 
 	return (
 		<Flex

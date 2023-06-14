@@ -11,15 +11,10 @@ import {
 } from "@chakra-ui/react";
 
 function Intro() {
-	// import of themeContext to detect which color theme to use
-	const { alternateTheme, light, dark } = useContext(themeContext);
+	// Import of themeContext to detect which color theme to use and options for theme colorways
+	const { textColor, bgColor, accentColor } = useContext(themeContext);
 	// import of headerHeightContext to determine the height of the header, to be base height of CardHeading on dynamic sizing of other, paired component (Intro)
 	const { headerHeight } = useContext(headerHeightContext);
-
-	// Constants for text and background colors, depending on the theme
-	const textColor = alternateTheme ? dark.text : light.text;
-	const bgColor = alternateTheme ? dark.bg : light.bg;
-	const accentColor = alternateTheme ? dark.accentColor : light.accentColor;
 
 	return (
 		<Flex width="100%">
@@ -54,8 +49,8 @@ function Intro() {
 						</Text>
 						, a web developer working with the MERN stack, and a recent graduate of
 						Columbia Engineering's Coding Boot Camp. I'm also a musician (click my photo
-						to see!). I'm passionate about building things that are useful and exciting
-						and have a strong interest in backend development, product work, databases,
+						to see!). I'm passionate about building things that are useful and exciting,
+						and I have a strong interest in backend development, product work, databases,
 						and AI.
 					</Text>
 				</CardBody>
