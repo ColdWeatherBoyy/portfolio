@@ -69,9 +69,13 @@ export const logoIcons = {
 	githubIcon: {
 		imageSrc: "/images/github-mark.svg",
 		hoverImageSrc: "/images/github-mark-white.svg",
+		border: "1px solid white",
+		hoverBorder: "1px solid black",
 	},
 	externalLinkIcon: {
 		imageSrc: "/images/external-link-black.svg",
 		hoverImageSrc: "/images/external-link.svg",
+		border: "1px solid black",
+		hoverBorder: "1px solid white",
 	},
 };

@@ -23,7 +23,7 @@ function LogoIcons({ link, purpose }) {
 			isExternal
 		>
 			<Image
-				border={!hoverStatus ? "1px solid white" : "1px solid black"}
+				border={!hoverStatus ? icon.border : icon.hoverBorder}
 				bg={!hoverStatus ? "white" : "black"}
 				borderRadius="full"
 				w={{ base: "10vw", lg: "5vw" }}
