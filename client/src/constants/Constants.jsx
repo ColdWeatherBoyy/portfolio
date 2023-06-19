@@ -3,7 +3,7 @@ export const projects = [
 		src: "/images/RectFRAiMEScreenshot.png",
 		thumbnailSrc: "/images/RectFRAiMEScreenshotThumbnail.png",
 		name: "FRAiME",
-		deployedLink: "https://main.d23fexaftsczqw.amplifyapp.com/",
+		deployedLink: "https://www.fraimed.art/",
 		repoLink: "https://github.com/ColinSprows/Fraime/ ",
 		description:
 			"Co-Founder and Lead Developer. eCommerce site in development; leverages OpenAI’s API for Dall-E and DaVinci. Users will generate bespoke art that they can then order prints of. Future features include selectable preprompts, finetuning prompts, and print API connection.",
