@@ -111,7 +111,7 @@ function Intro() {
 							</Text>
 						</Text>
 						<Text fontSize="xs" alignSelf="flex-end">
-							Please hire me.
+							I'm friendly – get in touch!
 						</Text>
 					</Flex>
 				</CardBody>

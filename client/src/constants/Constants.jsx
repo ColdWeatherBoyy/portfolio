@@ -6,7 +6,7 @@ export const projects = [
 		deployedLink: "https://www.fraimed.art/",
 		repoLink: "https://github.com/ColinSprows/Fraime/ ",
 		description:
-			"Co-Founder and Lead Developer. eCommerce site in development; leverages OpenAI’s API for Dall-E and DaVinci. Users will generate bespoke art that they can then order prints of. Future features include selectable preprompts, finetuning prompts, and print API connection.",
+			"Co-Founder and Lead Developer. FRAiME is an eCommerce platform still in development, leveraging OpenAI’s DALL-E API to allow users to generate bespoke art and order high-quality prints. Future features include selectable preprompts, finetuning options, and print ordering. MERN stack, Next.js, Styled Components.",
 	},
 	{
 		src: "/images/RectDadaScreenshot.png",
@@ -15,7 +15,7 @@ export const projects = [
 		deployedLink: "https://dada-museum.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
 		description:
-			"Lead Developer and UI Designer. Proof of concept showcase piece. Co-designed and implemented UI for a museum’s homepage; built Current Exhibits and Featured Artist section; collaborated on other homepage code.",
+			"Lead Developer and UI Designer. Proof of concept showcase project. Co-designed and implemented UI for a museum’s homepage with a focus on functional and engaging features. Node.js, React, Express, Chakra UI.",
 	},
 	{
 		src: "/images/RectTemplateScreenshot.png",
@@ -24,16 +24,16 @@ export const projects = [
 		deployedLink: "https://template-test-1.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/vite-template",
 		description:
-			"Lead Engineer. A template for MERN applications, with basic authorization capabilities baked in using JSON Web Token and a connection to a MongoDB preconfigured. Testable with an app like Insomnia.",
+			"Lead Engineer. A template for MERN applications, with basic authorization capabilities baked in using JSON Web Token and a connection to a MongoDB preconfigured. Basic routes and JWT testable with an app like Insomnia. MERN stack, React Router, DotEnv, Bcrypt, and JSON Web Token.",
 	},
 	{
 		src: "/images/RectPortfolioScreenshot.png",
 		thumbnailSrc: "/images/RectPortfolioScreenshotThumbnail.png",
 		name: "Portfolio",
-		deployedLink: "https://portfolio-esz.herokuapp.com/",
+		deployedLink: "https://www.EliasSZ.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/portfolio",
 		description:
-			"This portfolio that you're looking at right now! Built using my own Vite Template and Chakra UI.",
+			"This portfolio that you're looking at right now! Solo development project, built using a pared down version of my own Vite Template and Chakra UI.",
 	},
 	{
 		src: "/images/RectDeadInsideScreenshot.png",
@@ -42,7 +42,7 @@ export const projects = [
 		deployedLink: "https://dead-inside-games.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/dead-inside-games",
 		description:
-			"Class project: retro game site with login/signup capability and a group-designed version of Minesweeper. Built with Node.js, Express, Sequelize, Handlebars, and Pixi.js. Took on role of tech lead/project manager.",
+			"Class project. Retro game site with login/signup capability and a team-developed Minesweeper clone. Took on role of tech lead/project manager. Node.js, Express, Sequelize, JWT, Handlebars, Bulma, and Pixi.js.",
 	},
 	{
 		src: "/images/RectCitySoundsScreenshot.png",
@@ -51,7 +51,7 @@ export const projects = [
 		deployedLink: "https://city-sounds-esz.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/city-sounds",
 		description:
-			"Class project: vanilla JS, HTML, and CSS, practicing API calls. Allows the user to search the top songs by country, as determined by Deezer. Took on role of tech lead/project manager. Later, individually added on a backend server for a production-ready cors policy solution.",
+			"Class project. Allows the user to search top songs by country, as determined by Deezer. Took on role of tech lead/project manager. Later, individually added on a backend server for a production-ready CORS policy solution. Vanilla JS, HTML, and CSS.",
 	},
 	{
 		src: "/images/RectTweeterScreenshot.png",
@@ -60,7 +60,7 @@ export const projects = [
 		deployedLink: "https://tweeter-usk.herokuapp.com/",
 		repoLink: "https://github.com/BobbyCharms/tweeter",
 		description:
-			"Class project: Nearly complete, Twitter-inspired website, built with MERN stack and GraphQL. Took on role of tech lead/project manager.",
+			"Class project. Nearly complete, Twitter-inspired website, for shortform social media posting. Took on role of tech lead/project manager. MERN stack, Bootstrap, and GraphQL.",
 	},
 ];
 

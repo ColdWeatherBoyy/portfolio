@@ -8,13 +8,14 @@ function Header() {
 
 	return (
 		<Flex
-			width="100%"
+			width="100vw"
 			bg={bgColor}
 			color={textColor}
 			justify="center"
 			py={2}
 			gap={4}
 			boxShadow="dark-lg"
+			minH="5vh"
 		>
 			<Box>Welcome!</Box>
 		</Flex>

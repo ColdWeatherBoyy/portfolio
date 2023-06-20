@@ -8,10 +8,10 @@ function Footer() {
 
 	// Function to handle resume download
 	const handleResumeDownload = () => {
-		const fileUrl = "/assets/EliasSZ_Resume_Portfolio.pdf";
+		const fileUrl = "/assets/Spector-ZabuskyElias_Resume.pdf";
 		const link = document.createElement("a");
 		link.href = fileUrl;
-		link.download = "EliasSZ_Resume_Portfolio.pdf";
+		link.download = "Spector-ZabuskyElias_Resume.pdf";
 		link.click();
 	};
 
