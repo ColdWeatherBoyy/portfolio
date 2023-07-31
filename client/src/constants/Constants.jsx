@@ -6,7 +6,7 @@ export const projects = [
 		deployedLink: "https://www.fraimed.art/",
 		repoLink: "https://github.com/ColinSprows/Fraime/ ",
 		description:
-			"Co-Founder and Lead Developer. FRAiME is an eCommerce platform still in development, leveraging OpenAI’s DALL-E API to allow users to generate bespoke art and order high-quality prints. Future features include selectable preprompts, finetuning options, and print ordering. MERN stack, Next.js, Styled Components.",
+			"Lead Developer. FRAiME is an eCommerce platform still in development, leveraging OpenAI’s DALL-E API to allow users to generate bespoke art and order high-quality prints. Future features include selectable preprompts, finetuning options, and print ordering. MERN stack, Next.js, Styled Components.",
 	},
 	{
 		src: "/images/RectDadaScreenshot.png",
