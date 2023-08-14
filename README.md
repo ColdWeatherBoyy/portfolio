@@ -1,15 +1,35 @@
-# Vite React Template
+# Elias's Portfolio
+
+## Table of Contents
+
+- [Description](#description)
+- [License](#license)
+- [Features](#features)
+- [Questions and Contributions](#questions-and-contributions)
+- [Contact](#contact)
 
 ## Description
 
-Welcome to my portfolio! I built this to demonstrate some skills I have learned in React, Node.js, and Chakra UI. As my second project using Chakra, it allowed me significant practice in this frontend component library. It also provided continued development of my React comfort and skills.
+This is my portfolio! It uses React, ChakraUI, Express.js, and Vite to create a fast, responsive, and performant portfolio. It showcases a few projects, both active and completed, and has my contact information, resume, and links to my LinkedIn and Github. You can view the site, deployed with Heroku, [here](http://www.eliassz.com).
 
-## Usage
+## License
 
-This portfolio is licensed under the MIT license.
+This project is licensed under the MIT license.
 
-## Credits
+## Features
 
-- [Chakra UI](https://chakra-ui.com/)
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
+Using Chakra UI, I built thd project slideshow from combinations and alterations to their components. It contains links to each project's repo and deployed site, as well as a click-to-reveal description.
+
+## Questions and Contributions
+
+If you have any questions, please contact me at the email listed below. If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are welcome (or just reach out and give me your feedback! :smile:).
+
+## Contact
+
+This is my
+
+- [Email](mailto:elias.spector.zabusky@gmail.com)
+- [GitHub](https://www.github.com/coldweatherboyy)
+- [LinkedIn](https://www.linkedin.com/eliassz)
+- [Portfolio](http://www.eliassz.com)
+- [Band](https://linktr.ee/stojomusic)
