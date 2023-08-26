@@ -33,7 +33,7 @@ export const projects = [
 			"Backend developer for this one-page site that prompts users to submit a zip code to receive the 12 highest-rated bars that advertise happy hour on Yelp in the vicinity. Contributed to frontend logic as well.",
 		stack: ["Node.js", "Express", "React", "Yelp API", "Bootstrap"],
 		bullets: [
-			"Built full site backend and call to Yelp API.",
+			"Built full site backend, including the call to Yelp's API.",
 			"Collaborated on frontend features and the communication/data flow between client and server. Contributed in particular to the working clock.",
 		],
 	},
