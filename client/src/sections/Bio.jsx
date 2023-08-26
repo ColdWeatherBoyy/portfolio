@@ -43,15 +43,20 @@ function Intro() {
 
 				<CardBody py="0">
 					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={1.75}>
-						As just mentioned, I'm Elias{" "}
+						As just mentioned, I'm Elias
 						<Text as="span" fontSize={{ base: "2xs", md: "xs" }}>
 							(Spector-Zabusky)
 						</Text>
-						, a web developer working with the MERN stack, and a recent graduate of
-						Columbia Engineering's Coding Boot Camp. I'm also a musician (click my photo
-						to see!). I'm passionate about building things that are useful and exciting,
-						and I have a strong interest in backend development, product work, databases,
-						and AI.
+						, a developer and musician working with the MERN stack, with an interest in
+						backend development, full stack development, and product work. I'm a graduate
+						of Columbia Engineering's Coding Boot Camp with experience in project
+						management, operations, and the arts. I have strong skills in creative
+						problem-solving and collaboration, partnered with a focus on flexibility,
+						meticulousness, and iteration – skills built many years in music and other
+						industries. I'm currently looking for a full-time position as a backend
+						developer or full stack developer, though I'm open to other titles and roles.
+						Let's chat! Contact info is below, and you can scroll through my projects to
+						get a sense of what I've been working on.
 					</Text>
 				</CardBody>
 			</Card>

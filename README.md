@@ -14,7 +14,7 @@ This is my portfolio! It uses React, ChakraUI, Express.js, and Vite to create a 
 
 ## License
 
-This project is licensed under the MIT license.
+This project is licensed under the MIT license. Please see `LICENSE` for more info.
 
 ## Features
 

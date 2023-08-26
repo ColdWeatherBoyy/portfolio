@@ -66,26 +66,30 @@ function Intro() {
 					<CardHeader py={0}>
 						<Heading size={{ base: "2xl", sm: "3xl" }}>Hey there!</Heading>
 					</CardHeader>
-					<Image
-						src={imageSrc}
-						// fail safe to set headerHeight to height of header if image loads late and changes it
-						onLoad={() => setHeaderHeight(sectionHeaderRef.current.offsetHeight)}
-						// onClick to toggle theme
-						onClick={() => setAlternateTheme(!alternateTheme)}
-						alt="Picture of Elias"
-						borderRadius="100%"
-						maxW={{ base: "35%", lg: "35%" }}
-						cursor="pointer"
-						_hover={{
-							transform: "scale(1.03)",
-							boxShadow: "lg",
-						}}
-						_active={{
-							transform: "scale(0.97)",
-							boxShadow: "inset 0px 0px 10px 5px rgba(0, 0, 0, 0.75)",
-						}}
-						transition="all 0.2s ease-in-out"
-					/>
+					<Flex maxW={{ base: "35%", lg: "35%" }} direction="column" align="flex-end">
+						<Image
+							src={imageSrc}
+							// fail safe to set headerHeight to height of header if image loads late and changes it
+							onLoad={() => setHeaderHeight(sectionHeaderRef.current.offsetHeight)}
+							// onClick to toggle theme
+							onClick={() => setAlternateTheme(!alternateTheme)}
+							alt="Picture of Elias"
+							borderRadius="100%"
+							cursor="pointer"
+							_hover={{
+								transform: "scale(1.03)",
+								boxShadow: "lg",
+							}}
+							_active={{
+								transform: "scale(0.97)",
+								boxShadow: "inset 0px 0px 10px 5px rgba(0, 0, 0, 0.75)",
+							}}
+							transition="all 0.2s ease-in-out"
+						/>
+						<Text fontSize="2xs" alignSelf="flex-end">
+							Click me!
+						</Text>
+					</Flex>
 				</Grid>
 				<Divider
 					color={accentColor}
