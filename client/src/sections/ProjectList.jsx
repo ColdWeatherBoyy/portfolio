@@ -156,7 +156,7 @@ const ProjectList = () => {
 							justify="space-evenly"
 							borderRadius="xl"
 							px={2}
-							py={3}
+							py={4}
 							boxShadow="inset 5px 5px 12px rgba(0, 0, 0, 0.2), inset -5px -5px 12px rgba(255, 255, 255, 0.4)"
 							gap={2}
 						>
@@ -173,15 +173,15 @@ const ProjectList = () => {
 									transform={index === currentImageIndex ? "scale(1)" : "scale(.9)"}
 									cursor="pointer"
 									borderRadius="full"
-									boxShadow="xl"
+									boxShadow="lg"
 									border={index === currentImageIndex ? `.5px solid ${bgColor}` : "0px"}
 									_hover={{
-										boxShadow: "dark-lg",
+										boxShadow: "xl",
 										opacity: 1,
 										transform: "scale(1.05)",
 									}}
 									_active={{
-										boxShadow: "xl",
+										boxShadow: "lg",
 										opacity: 0.95,
 										transform: "scale(1)",
 									}}
