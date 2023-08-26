@@ -9,6 +9,8 @@ function ProjectDescription({
 	deployedLink,
 	name,
 	description,
+	stack,
+	bullets,
 	isOpen,
 	onToggle,
 }) {
@@ -87,9 +89,48 @@ function ProjectDescription({
 			</Flex>
 			{/* Chakra's built in Slide component for transition animation */}
 			<Slide direction="bottom" in={isOpen} onClick={onToggle} style={{ zIndex: 10 }}>
-				<Box p="40px" color={textColor} bg={bgColor} mt="4" rounded="dark-lg" shadow="md">
+				<Flex
+					direction="column"
+					p="40px"
+					color={textColor}
+					bg={bgColor}
+					mt="4"
+					rounded="dark-lg"
+					shadow="xl"
+				>
 					{description}
-				</Box>
+					{/* stack in a horizontal list */}
+					<Flex direction="row" wrap="wrap" mt={2} ml={6}>
+						{stack.map((tech, index) => (
+							<Box
+								key={index}
+								bg={textColor}
+								color={bgColor}
+								rounded="full"
+								px={2}
+								py={0.5}
+								mx={1}
+								my={1}
+								fontSize="sm"
+								shadow="md"
+							>
+								{tech}
+							</Box>
+						))}
+					</Flex>
+					{/* bullets in a vertical list */}
+					{bullets ? (
+						<Flex direction="column" mt={2}>
+							{bullets.map((bullet, index) => (
+								<Text key={index} fontSize="sm">
+									• {bullet}
+								</Text>
+							))}
+						</Flex>
+					) : (
+						<></>
+					)}
+				</Flex>
 			</Slide>
 		</>
 	);

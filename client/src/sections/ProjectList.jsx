@@ -110,6 +110,8 @@ const ProjectList = () => {
 									deployedLink={projects[currentImageIndex].deployedLink}
 									name={projects[currentImageIndex].name}
 									description={projects[currentImageIndex].description}
+									stack={projects[currentImageIndex].stack}
+									bullets={projects[currentImageIndex].bullets}
 									isOpen={isOpen}
 									onToggle={onToggle}
 								/>
@@ -142,6 +144,8 @@ const ProjectList = () => {
 							deployedLink={projects[currentImageIndex].deployedLink}
 							name={projects[currentImageIndex].name}
 							description={projects[currentImageIndex].description}
+							stack={projects[currentImageIndex].stack}
+							bullets={projects[currentImageIndex].bullets}
 							isOpen={isOpen}
 							onToggle={onToggle}
 						/>

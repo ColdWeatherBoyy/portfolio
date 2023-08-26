@@ -6,16 +6,22 @@ export const projects = [
 		deployedLink: "https://www.fraimed.art/",
 		repoLink: "https://github.com/ColdWeatherBoyy/fraime ",
 		description:
-			"Lead Developer. FRAiME is an eCommerce platform still in development, leveraging OpenAI’s DALL-E API to allow users to generate bespoke art and order high-quality prints. Future features include selectable preprompts, finetuning options, and print ordering. MERN stack, Next.js, Styled Components.",
-	},
-	{
-		src: "/images/RectDadaScreenshot.png",
-		thumbnailSrc: "/images/RectDadaScreenshotThumbnail.png",
-		name: "Dada Art Museum",
-		deployedLink: "https://dada-museum.herokuapp.com/",
-		repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
-		description:
-			"Lead Developer and UI Designer. Proof of concept showcase project. Co-designed and implemented UI for a museum’s homepage with a focus on functional and engaging features. Node.js, React, Express, Chakra UI.",
+			"Full Stack Developer. FRAiME is an in-development eCommerce site, leveraging OpenAI’s text-to-image DALL-E API to allow users to generate unique art and order prints.",
+		stack: [
+			"React",
+			"Next.js",
+			"Styled Components",
+			"Node.js",
+			"Express",
+			"MongoDB",
+			"Mongoose",
+			"OpenAI API",
+		],
+		bullets: [
+			"Co-planned the backend architecture; built majority of REST API endpoints and DB models.",
+			"Iteratively worked on systems to persist state to decrease DB calls, moving from global context to caching.",
+			"Developed logic on Purchase page to track and save user selections and calculate prices accordingly.",
+		],
 	},
 	{
 		src: "/images/RectHappiestHourScreenshot.png",
@@ -24,7 +30,26 @@ export const projects = [
 		deployedLink: "https://happiest-hour-cb7f5c7640b4.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/happiest-hour",
 		description:
-			"Lead Developer and Concept Creator. Allows user to enter a zip code and receive the 12 highest-rated bars that advertise happy hour on their Yelp pages. Led backend work and collaborated on implementation of frontend features, particularly the functional clock hands and use of data from external API. Utilizes Yelp's API, Bootstrap, React, Express.js, and Node.js.",
+			"Backend developer for this one-page site that prompts users to submit a zip code to receive the 12 highest-rated bars that advertise happy hour on Yelp in the vicinity. Contributed to frontend logic as well.",
+		stack: ["Node.js", "Express", "React", "Yelp API", "Bootstrap"],
+		bullets: [
+			"Built full site backend and call to Yelp API.",
+			"Collaborated on frontend features and the communication/data flow between client and server. Contributed in particular to the working clock.",
+		],
+	},
+	{
+		src: "/images/RectDadaScreenshot.png",
+		thumbnailSrc: "/images/RectDadaScreenshotThumbnail.png",
+		name: "Dada Art Museum",
+		deployedLink: "https://dada-museum.herokuapp.com/",
+		repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
+		description:
+			"Co-designed and implemented UI for a sample museum's homepage with a focus on functional features and dynamic, engaging content. Took on role of Full Stack Developer, with a focus on frontend design.",
+		stack: ["Node.js", "React", "Express", "Chakra UI"],
+		bullets: [
+			"Built Current Exhibits and Featured Artist sections; designed reusable components for consistent site UX.",
+			"Implemented random art feature, making calls to the Art Institute of Chicago’s API on click or page load.",
+		],
 	},
 	{
 		src: "/images/RectPortfolioScreenshot.png",
@@ -33,16 +58,8 @@ export const projects = [
 		deployedLink: "https://www.EliasSZ.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/portfolio",
 		description:
-			"This portfolio that you're looking at right now! Solo development project, built using a pared down version of my own Vite Template and Chakra UI.",
-	},
-	{
-		src: "/images/RectTemplateScreenshot.png",
-		thumbnailSrc: "/images/RectTemplateScreenshotThumbnail.png",
-		name: "Vite React Template",
-		deployedLink: "https://template-test-1.herokuapp.com/",
-		repoLink: "https://github.com/ColdWeatherBoyy/vite-template",
-		description:
-			"Lead Engineer. A template for MERN applications, with basic authorization capabilities baked in using JSON Web Token and a connection to a MongoDB preconfigured. Basic routes and JWT testable with an app like Insomnia. MERN stack, React Router, DotEnv, Bcrypt, and JSON Web Token.",
+			"This portfolio that you're looking at right now! Builtsolo as a place to house my projects so far.",
+		stack: ["React", "Chakra UI", "Vite", "Node.js", "Express"],
 	},
 	{
 		src: "/images/RectDeadInsideScreenshot.png",
@@ -51,7 +68,11 @@ export const projects = [
 		deployedLink: "https://dead-inside-games.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/dead-inside-games",
 		description:
-			"Class project. Retro game site with login/signup capability and a team-developed Minesweeper clone. Took on role of tech lead/project manager. Node.js, Express, Sequelize, JWT, Handlebars, Bulma, and Pixi.js.",
+			"Class project. Retro game site with login/signup capability and a Minesweeper clone.",
+		stack: ["Node.js", "Express", "Sequelize", "JWT", "Handlebars", "Bulma", "Pixi.js"],
+		bullets: [
+			"Took on role of tech lead/project manager to help guide week-long project from concept to completion.",
+		],
 	},
 	{
 		src: "/images/RectCitySoundsScreenshot.png",
@@ -60,7 +81,12 @@ export const projects = [
 		deployedLink: "https://city-sounds-esz.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/city-sounds",
 		description:
-			"Class project. Allows the user to search top songs by country, as determined by Deezer. Took on role of tech lead/project manager. Later, individually added on a backend server for a production-ready CORS policy solution. Vanilla JS, HTML, and CSS.",
+			"Class project. Allows the user to search top songs by country, making use of Deezer's API for song data.",
+		stack: ["JavaScript", "HTML", "CSS", "Node.js", "Express"],
+		bullets: [
+			"Took on role of tech lead/project manager to help guide week-long project from concept to completion.",
+			"Post-bootcamp, individually added on a backend server for a production-ready CORS policy solution.",
+		],
 	},
 ];
 
