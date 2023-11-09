@@ -43,20 +43,27 @@ function Intro() {
 
 				<CardBody py="0">
 					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={1.75}>
-						As just mentioned, I'm Elias
+						As just mentioned, I'm Elias{" "}
 						<Text as="span" fontSize={{ base: "2xs", md: "xs" }}>
 							(Spector-Zabusky)
 						</Text>
-						, a developer and musician working with the MERN stack, with an interest in
-						backend development, full stack development, and product work. I'm a graduate
-						of Columbia Engineering's Coding Boot Camp with experience in project
+						, a software engineer and musician working with the MERN stack, with an
+						interest in backend development, full stack development, and product work. I
+						current work as a Software Engineer for Engage Partners, Inc, designing,
+						building, and extending their content generation extension (
+						<a
+							href="https://talentvyne.ai"
+							target="_blank"
+							style={{ textDecoration: "underline" }}
+						>
+							Click2.Ai
+						</a>
+						), powered by generative AI. I also have previous experience in project
 						management, operations, and the arts. I have strong skills in creative
-						problem-solving and collaboration, partnered with a focus on flexibility,
-						meticulousness, and iteration – skills built many years in music and other
-						industries. I'm currently looking for a full-time position as a backend
-						developer or full stack developer, though I'm open to other titles and roles.
-						Let's chat! Contact info is below, and you can scroll through my projects to
-						get a sense of what I've been working on.
+						problem-solving and collaboration, built over many years in music and other
+						industries, and I analytically minded with a knack for supporting
+						decision-making. Let's chat! Contact info is below, and you can scroll through
+						my projects to get a sense of other things I've been working on.
 					</Text>
 				</CardBody>
 			</Card>
