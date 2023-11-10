@@ -61,7 +61,7 @@ function Intro() {
 						), powered by generative AI. I also have previous experience in project
 						management, operations, and the arts. I have strong skills in creative
 						problem-solving and collaboration, built over many years in music and other
-						industries, and I analytically minded with a knack for supporting
+						industries, and I'm also analytically minded with a knack for supporting
 						decision-making. Let's chat! Contact info is below, and you can scroll through
 						my projects to get a sense of other things I've been working on.
 					</Text>
