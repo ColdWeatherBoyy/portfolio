@@ -49,7 +49,7 @@ function Intro() {
 						</Text>
 						, a software engineer and musician working with the MERN stack, with an
 						interest in backend development, full stack development, and product work. I
-						current work as a Software Engineer for Engage Partners, Inc, designing,
+						currently work as a Software Engineer for Engage Partners, Inc., designing,
 						building, and extending their content generation extension (
 						<a
 							href="https://talentvyne.ai"
@@ -62,8 +62,8 @@ function Intro() {
 						management, operations, and the arts. I have strong skills in creative
 						problem-solving and collaboration, built over many years in music and other
 						industries, and I'm also analytically minded with a knack for supporting
-						decision-making. Let's chat! Contact info is below, and you can scroll through
-						my projects to get a sense of other things I've been working on.
+						decision-making. Let's chat! My contact info is below, and you can scroll
+						through my projects to get a sense of other things I've been working on.
 					</Text>
 				</CardBody>
 			</Card>
