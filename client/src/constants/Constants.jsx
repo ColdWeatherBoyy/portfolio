@@ -1,5 +1,20 @@
 export const projects = [
 	{
+		src: "/images/RectChattitudeScreenshot.png",
+		thumbnailSrc: "/images/RectChattitudeScreenshotThumbnail.png",
+		name: "Chattitude",
+		deployedLink: "https://chattitude-44756dc57837.herokuapp.com/",
+		repoLink: "https://github.com/ColdWeatherBoyy/Chattitude",
+		description:
+			"Full Stack Developer. Chattitude is a global messaging app. It offers a chat page for all users, full account persistence and updateability, and chat history.",
+		stack: ["React", "WebSockets", "Node.js", "MongoDB", "Express", "ChakraUI"],
+		bullets: [
+			"Implemented user authentication using JWT, bcrypt, and HTTP-only cookies as a learning experience.",
+			"Developed functionality for WebSocket front/back-end handshake to track active users and connections.",
+			"Built systems for persisting accounts and chat history and connected them through REST API endpoints.",
+		],
+	},
+	{
 		src: "/images/RectFRAiMEScreenshot.png",
 		thumbnailSrc: "/images/RectFRAiMEScreenshotThumbnail.png",
 		name: "FRAiME",
@@ -19,8 +34,7 @@ export const projects = [
 		],
 		bullets: [
 			"Co-planned the backend architecture; built majority of REST API endpoints and DB models.",
-			"Iteratively worked on systems to persist state to decrease DB calls, moving from global context to caching.",
-			"Developed logic on Purchase page to track and save user selections and calculate prices accordingly.",
+			"Improved state management to decrease DB calls by moving data from global context to caching.",
 		],
 	},
 	{
@@ -60,19 +74,6 @@ export const projects = [
 		description:
 			"This portfolio that you're looking at right now! Builtsolo as a place to house my projects so far.",
 		stack: ["React", "Chakra UI", "Vite", "Node.js", "Express"],
-	},
-	{
-		src: "/images/RectDeadInsideScreenshot.png",
-		thumbnailSrc: "/images/RectDeadInsideScreenshotThumbnail.png",
-		name: "Dead Inside Games",
-		deployedLink: "https://dead-inside-games.herokuapp.com/",
-		repoLink: "https://github.com/ColdWeatherBoyy/dead-inside-games",
-		description:
-			"Class project. Retro game site with login/signup capability and a Minesweeper clone.",
-		stack: ["Node.js", "Express", "Sequelize", "JWT", "Handlebars", "Bulma", "Pixi.js"],
-		bullets: [
-			"Took on role of tech lead/project manager to help guide week-long project from concept to completion.",
-		],
 	},
 	{
 		src: "/images/RectCitySoundsScreenshot.png",
