@@ -31,6 +31,8 @@ export const projects = [
 			"MongoDB",
 			"Mongoose",
 			"OpenAI API",
+			"AWS Amplify",
+			"AWS Cognito",
 		],
 		bullets: [
 			"Co-planned the backend architecture; built majority of REST API endpoints and DB models.",

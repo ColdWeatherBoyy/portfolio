@@ -47,23 +47,29 @@ function Intro() {
 						<Text as="span" fontSize={{ base: "2xs", md: "xs" }}>
 							(Spector-Zabusky)
 						</Text>
-						, a software engineer and musician working with the MERN stack, with an
-						interest in backend development, full stack development, and product work. I
-						currently work as a Software Engineer for Engage Partners, Inc., designing,
-						building, and extending their content generation extension (
+						, a software engineer and musician. I currently work as a Software Engineer
+						for Engage Partners, Inc., working on their content generation extensions
+						powered by generative AI, both having extended the functionality and design of
+						their main product (
 						<a
-							href="https://talentvyne.ai"
+							href="https://click2.ai"
 							target="_blank"
 							style={{ textDecoration: "underline" }}
 						>
 							Click2.Ai
 						</a>
-						), powered by generative AI. I also have previous experience in project
-						management, operations, and the arts. I have strong skills in creative
-						problem-solving and collaboration, built over many years in music and other
-						industries, and I'm also analytically minded with a knack for supporting
-						decision-making. Let's chat! My contact info is below, and you can scroll
-						through my projects to get a sense of other things I've been working on.
+						), and having led the development of their customized version (
+						<a
+							href="https://politicalscribe.org/"
+							target="_blank"
+							style={{ textDecoration: "underline" }}
+						>
+							Political Scribe
+						</a>
+						). I bring strong skills in creative problem-solving and collaboration to my
+						technical work, built over many years in music and other industries. Let's
+						chat! My contact info is below, and you can scroll through my projects to get
+						a sense of other things I've been working on.
 					</Text>
 				</CardBody>
 			</Card>
