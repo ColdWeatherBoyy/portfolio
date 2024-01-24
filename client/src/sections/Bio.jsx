@@ -48,9 +48,7 @@ function Intro() {
 							(Spector-Zabusky)
 						</Text>
 						, a software engineer and musician. I currently work as a Software Engineer
-						for Engage Partners, Inc., working on their content generation extensions
-						powered by generative AI, both having extended the functionality and design of
-						their main product (
+						for Engage Partners, Inc., extending the functionality of their main product (
 						<a
 							href="https://click2.ai"
 							target="_blank"
