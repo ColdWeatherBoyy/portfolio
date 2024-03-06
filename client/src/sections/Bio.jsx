@@ -47,27 +47,16 @@ function Intro() {
 						<Text as="span" fontSize={{ base: "2xs", md: "xs" }}>
 							(Spector-Zabusky)
 						</Text>
-						, a software engineer and musician. I currently work as a Software Engineer
-						for Engage Partners, Inc., extending the functionality of their main product (
-						<a
-							href="https://click2.ai"
-							target="_blank"
-							style={{ textDecoration: "underline" }}
-						>
-							Click2.Ai
-						</a>
-						), and having led the development of their customized version (
-						<a
-							href="https://politicalscribe.org/"
-							target="_blank"
-							style={{ textDecoration: "underline" }}
-						>
-							Political Scribe
-						</a>
-						). I bring strong skills in creative problem-solving and collaboration to my
-						technical work, built over many years in music and other industries. Let's
-						chat! My contact info is below, and you can scroll through my projects to get
-						a sense of other things I've been working on.
+						, a software engineer and musician. I was last employed as a Fullstack
+						Software Engineer, focused on the design, development, and deployment of a
+						Chrome extension content generator powered by OpenAI's API, built with
+						TypeScript, Node.js, React, Styled Components, and AWS. You can also scroll
+						through my personal projects to get a sense of other technical projects I've
+						worked on. Years in music and other industries have helped me build strong
+						skills in collaboration, communication, and creative problem-solving which I
+						bring to all the work I do. I'm looking for my next opportunity to join a
+						supprotive team that values growth, creativity, and collaboration. Let's chat!
+						My contact info is below.
 					</Text>
 				</CardBody>
 			</Card>
