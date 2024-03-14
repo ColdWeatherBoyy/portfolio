@@ -49,6 +49,20 @@ export const projects = [
 		],
 	},
 	{
+		src: "/images/RectArtistRelationsScreenshot.png",
+		thumbnailSrc: "/images/RectArtistRelationsScreenshotThumbnail.png",
+		name: "Artist Relations",
+		deployedLink: "https://artist-relations.eliassz.com/",
+		repoLink: "https://github.com/ColdWeatherBoyy/artist_relations",
+		description:
+			"A streamlined web application designed to simplify the music discovery experience. Search for an artist and see a list of similar artists, ranked based on how many of the major streaming services (Spotify, Tidal, Deezer, and Last.fm) relate them to the artist you searched for.",
+		stack: ["Python", "Flask", "Jinja2", "JavaScript", "HTML", "CSS"],
+		bullets: [
+			"Built API endpoints to authenticate and fetch necessary data from Spotify, Tidal, Deezer, and Last.fm.",
+			"Implemented front-end search functionality and dynamic ranked artist display.",
+		],
+	},
+	{
 		src: "/images/RectHappiestHourScreenshot.png",
 		thumbnailSrc: "/images/RectHappiestHourScreenshotThumbnail.png",
 		name: "Happiest Hour",
@@ -85,20 +99,6 @@ export const projects = [
 		description:
 			"This portfolio that you're looking at right now! Built solo as a place to house my projects so far.",
 		stack: ["React", "Chakra UI", "Vite", "Node.js", "Express.js", "Heroku"],
-	},
-	{
-		src: "/images/RectCitySoundsScreenshot.png",
-		thumbnailSrc: "/images/RectCitySoundsScreenshotThumbnail.png",
-		name: "City Sounds",
-		deployedLink: "https://city-sounds-esz.herokuapp.com/",
-		repoLink: "https://github.com/ColdWeatherBoyy/city-sounds",
-		description:
-			"Class project. Allows the user to search top songs by country, making use of Deezer's API for song data.",
-		stack: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js"],
-		bullets: [
-			"Took on role of tech lead/project manager to help guide week-long project from concept to completion.",
-			"Post-bootcamp, individually added on a backend server for a production-ready CORS policy solution.",
-		],
 	},
 ];
 
