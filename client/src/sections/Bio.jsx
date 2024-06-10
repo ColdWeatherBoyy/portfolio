@@ -49,14 +49,14 @@ function Intro() {
 						</Text>
 						, a software engineer and musician. I was last employed as a Fullstack
 						Software Engineer, focused on the design, development, and deployment of a
-						Chrome extension content generator powered by OpenAI's API, built with
-						TypeScript, Node.js, React, Styled Components, and AWS. You can also scroll
-						through my personal projects to get a sense of other technical projects I've
-						worked on. Years in music and other industries have helped me build strong
-						skills in collaboration, communication, and creative problem-solving which I
-						bring to all the work I do. I'm looking for my next opportunity to join a
-						supprotive team that values growth, creativity, and collaboration. Let's chat!
-						My contact info is below.
+						Chrome extension social media content generator powered by OpenAI's API, built
+						with TypeScript, Node.js, React, Styled Components, and AWS. Take a look at
+						some of my personal projects, listed below, to get a better sense of my work.
+						Years in music and other industries have helped me build strong skills in
+						collaboration, communication, and creative problem-solving which I bring to
+						all the work I do. I'm looking for my next opportunity to join a supportive
+						team that values growth, creativity, and collaboration. Let's chat! My contact
+						info is below.
 					</Text>
 				</CardBody>
 			</Card>
