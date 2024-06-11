@@ -18,9 +18,45 @@ export const projects = [
 			"Express.js",
 		],
 		bullets: [
-			"Implemented user authentication using JWT, bcrypt, and HTTP-only cookies.",
-			"Developed functionality for WebSocket front/back-end handshake to track active users and connections.",
-			"Built systems for persisting accounts and chat history and connected them through REST API endpoints.",
+			"Used JWT, bcrypt, and HTTP-only cookies to build a secure, scalable, and XSS-resistant authentication system.",
+			"Engineered WebSocket front/back-end handshake to monitor active users and connections in real-time.",
+			"Developed API endpoints for user registration, login, and efficient chat history management.",
+		],
+	},
+	{
+		src: "/images/RectPhysicalTherapyTimersScreenshot.png",
+		thumbnailSrc: "/images/RectPhysicalTherapyTimersScreenshotThumbnail.png",
+		name: "PT Timers",
+		deployedLink: "https://physicaltherapytimers.eliassz.com/",
+		repoLink: "https://github.com/ColdWeatherBoyy/pt-timer",
+		description:
+			"An app that allows physical therapy patients to save personalized timers by duration and consecutive repetitions for their rehab exercises/stretches.",
+		stack: [
+			"Next.js",
+			"TypeScript",
+			"AWS Amplify",
+			"AWS Cognito",
+			"AWS DynamoDB",
+			"Tailwind CSS",
+			"React",
+		],
+		bullets: [
+			"Developed a state machine to track timers, enhancing UI/UX with dynamic, real-time audio-visual feedback.",
+			"Integrated AWS Cognito for authentication and AWS DynamoDB for secure, user-specific data management.",
+		],
+	},
+	{
+		src: "/images/RectArtistRelationsScreenshot.png",
+		thumbnailSrc: "/images/RectArtistRelationsScreenshotThumbnail.png",
+		name: "Artist Relations",
+		deployedLink: "https://artist-relations.eliassz.com/",
+		repoLink: "https://github.com/ColdWeatherBoyy/artist_relations",
+		description:
+			"A streamlined web application designed to simplify the music discovery experience. Search for an artist and see a list of similar artists, ranked based on how many of the major streaming services (Spotify, Tidal, Deezer, and Last.fm) relate them to the artist you searched for.",
+		stack: ["Python", "Flask", "Jinja2", "JavaScript", "HTML", "CSS"],
+		bullets: [
+			"Built API endpoints to authenticate and fetch necessary data from Spotify, Tidal, Deezer, and Last.fm.",
+			"Implemented front-end search functionality and dynamic ranked artist display.",
 		],
 	},
 	{
@@ -48,34 +84,20 @@ export const projects = [
 			"Improved state management to decrease DB calls by moving data from global context to caching.",
 		],
 	},
-	{
-		src: "/images/RectArtistRelationsScreenshot.png",
-		thumbnailSrc: "/images/RectArtistRelationsScreenshotThumbnail.png",
-		name: "Artist Relations",
-		deployedLink: "https://artist-relations.eliassz.com/",
-		repoLink: "https://github.com/ColdWeatherBoyy/artist_relations",
-		description:
-			"A streamlined web application designed to simplify the music discovery experience. Search for an artist and see a list of similar artists, ranked based on how many of the major streaming services (Spotify, Tidal, Deezer, and Last.fm) relate them to the artist you searched for.",
-		stack: ["Python", "Flask", "Jinja2", "JavaScript", "HTML", "CSS"],
-		bullets: [
-			"Built API endpoints to authenticate and fetch necessary data from Spotify, Tidal, Deezer, and Last.fm.",
-			"Implemented front-end search functionality and dynamic ranked artist display.",
-		],
-	},
-	{
-		src: "/images/RectHappiestHourScreenshot.png",
-		thumbnailSrc: "/images/RectHappiestHourScreenshotThumbnail.png",
-		name: "Happiest Hour",
-		deployedLink: "https://happiest-hour-cb7f5c7640b4.herokuapp.com/",
-		repoLink: "https://github.com/ColdWeatherBoyy/happiest-hour",
-		description:
-			"Single page application allowing a user to submit a zip code and receive the 12 highest rated bars in that area that advertise happy hour on Yelp.",
-		stack: ["Node.js", "Express.js", "React", "JavaScript", "Bootstrap"],
-		bullets: [
-			"Built backend and integrated Yelp's API to fetch bar information.",
-			"Collaborated on front-end implementation, particularly making the clock functional.",
-		],
-	},
+	// {
+	// 	src: "/images/RectHappiestHourScreenshot.png",
+	// 	thumbnailSrc: "/images/RectHappiestHourScreenshotThumbnail.png",
+	// 	name: "Happiest Hour",
+	// 	deployedLink: "https://happiest-hour-cb7f5c7640b4.herokuapp.com/",
+	// 	repoLink: "https://github.com/ColdWeatherBoyy/happiest-hour",
+	// 	description:
+	// 		"Single page application allowing a user to submit a zip code and receive the 12 highest rated bars in that area that advertise happy hour on Yelp.",
+	// 	stack: ["Node.js", "Express.js", "React", "JavaScript", "Bootstrap"],
+	// 	bullets: [
+	// 		"Built backend and integrated Yelp's API to fetch bar information.",
+	// 		"Collaborated on front-end implementation, particularly making the clock functional.",
+	// 	],
+	// },
 	{
 		src: "/images/RectDadaScreenshot.png",
 		thumbnailSrc: "/images/RectDadaScreenshotThumbnail.png",
