@@ -1,48 +1,48 @@
 export const projects = [
 	{
-		src: "/images/RectChattitudeScreenshot.png",
-		thumbnailSrc: "/images/RectChattitudeScreenshotThumbnail.png",
-		name: "Chattitude",
-		deployedLink: "https://chattitude.eliassz.com/",
-		repoLink: "https://github.com/ColdWeatherBoyy/Chattitude",
-		description:
-			"A messaging app with a global chat page for all users, account persistence and updateability, and chat history. ",
-		stack: [
-			"WebSockets",
-			"React",
-			"JavaScript",
-			"Node.js",
-			"ChakraUI",
-			"MongoDB",
-			"Mongoose",
-			"Express.js",
-		],
-		bullets: [
-			"Used JWT, bcrypt, and HTTP-only cookies to build a secure, scalable, and XSS-resistant authentication system.",
-			"Engineered WebSocket front/back-end handshake to monitor active users and connections in real-time.",
-			"Developed API endpoints for user registration, login, and efficient chat history management.",
-		],
-	},
-	{
 		src: "/images/RectPhysicalTherapyTimersScreenshot.png",
 		thumbnailSrc: "/images/RectPhysicalTherapyTimersScreenshotThumbnail.png",
 		name: "PT Timers",
 		deployedLink: "https://physicaltherapytimers.eliassz.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/pt-timer",
 		description:
-			"An app that allows physical therapy patients to save personalized timers by duration and consecutive repetitions for their rehab exercises/stretches.",
+			"Built-to-spec app for physical therapy patients to save custom exercise timers by length and consecutive repetitions, deployed with AWS Amplify.",
 		stack: [
 			"Next.js",
 			"TypeScript",
-			"AWS Amplify",
-			"AWS Cognito",
-			"AWS DynamoDB",
 			"Tailwind CSS",
 			"React",
+			"AWS Cognito",
+			"AWS DynamoDB",
+			"AWS Amplify",
 		],
 		bullets: [
-			"Developed a state machine to track timers, enhancing UI/UX with dynamic, real-time audio-visual feedback.",
-			"Integrated AWS Cognito for authentication and AWS DynamoDB for secure, user-specific data management.",
+			"Implemented a state machine for timer status, enhancing UI/UX with dynamic, real-time audio-visual feedback.",
+			"Integrated AWS Cognito for authentication and AWS DynamoDB for secure, per-user data management.",
+		],
+	},
+	{
+		src: "/images/RectChattitudeScreenshot.png",
+		thumbnailSrc: "/images/RectChattitudeScreenshotThumbnail.png",
+		name: "Chattitude",
+		deployedLink: "https://chattitude.eliassz.com/",
+		repoLink: "https://github.com/ColdWeatherBoyy/Chattitude",
+		description:
+			"A messaging app with a global chat for all users, account persistence and updateability, and chat history, deployed with Heroku.",
+		stack: [
+			"React",
+			"JavaScript",
+			"ChakraUI",
+			"WebSockets",
+			"Node.js",
+			"Express.js",
+			"MongoDB",
+			"Mongoose",
+			"Heroku",
+		],
+		bullets: [
+			"Used JWT, bcrypt, and HTTP-only cookies to build a secure, scalable, and XSS-resistant authentication system.",
+			"Engineered WebSocket front/back-end handshake to monitor active users and connections in real-time.",
 		],
 	},
 	{
@@ -52,11 +52,11 @@ export const projects = [
 		deployedLink: "https://artist-relations.eliassz.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/artist_relations",
 		description:
-			"A streamlined web application designed to simplify the music discovery experience. Search for an artist and see a list of similar artists, ranked based on how many of the major streaming services (Spotify, Tidal, Deezer, and Last.fm) relate them to the artist you searched for.",
-		stack: ["Python", "Flask", "Jinja2", "JavaScript", "HTML", "CSS"],
+			"Designed to simplify the music discovery experience, this app allows you to search for an artist and see a list of similar artists, ranked by how many major streaming services relate them to the artist you searched for; deployed with Heroku.",
+		stack: ["Python", "Flask", "Jinja2", "JavaScript", "Heroku"],
 		bullets: [
-			"Built API endpoints to authenticate and fetch necessary data from Spotify, Tidal, Deezer, and Last.fm.",
-			"Implemented front-end search functionality and dynamic ranked artist display.",
+			"Integrated Spotify, Tidal, Deezer, and Last.fm authenticated API endpoints to fetch artist data.",
+			"Implemented search and discovery UI with Jinja2 templating and Flask routing.",
 		],
 	},
 	{
@@ -66,38 +66,24 @@ export const projects = [
 		deployedLink: "https://www.fraimed.art/",
 		repoLink: "https://github.com/ColdWeatherBoyy/fraime ",
 		description:
-			"An eCommerce site concept, leveraging OpenAI’s text-to-image DALL-E API to allow users to generate unique art and order prints.",
+			"An eCommerce site concept, leveraging OpenAI’s text-to-image DALL-E API to allow users to generate unique art and order prints, deployed with AWS Amplify.",
 		stack: [
-			"React",
 			"Next.js",
+			"React",
 			"JavaScript",
+			"Styled Components",
 			"Node.js",
+			"Express.js",
 			"MongoDB",
 			"Mongoose",
-			"Express.js",
-			"Styled Components",
-			"AWS Amplify",
 			"AWS Cognito",
+			"AWS Amplify",
 		],
 		bullets: [
 			"Collaborated on the initial backend architecture; built majority of REST API endpoints and DB models.",
-			"Improved state management to decrease DB calls by moving data from global context to caching.",
+			"Improved state management to optimize DB usage by caching global data for faster access.",
 		],
 	},
-	// {
-	// 	src: "/images/RectHappiestHourScreenshot.png",
-	// 	thumbnailSrc: "/images/RectHappiestHourScreenshotThumbnail.png",
-	// 	name: "Happiest Hour",
-	// 	deployedLink: "https://happiest-hour-cb7f5c7640b4.herokuapp.com/",
-	// 	repoLink: "https://github.com/ColdWeatherBoyy/happiest-hour",
-	// 	description:
-	// 		"Single page application allowing a user to submit a zip code and receive the 12 highest rated bars in that area that advertise happy hour on Yelp.",
-	// 	stack: ["Node.js", "Express.js", "React", "JavaScript", "Bootstrap"],
-	// 	bullets: [
-	// 		"Built backend and integrated Yelp's API to fetch bar information.",
-	// 		"Collaborated on front-end implementation, particularly making the clock functional.",
-	// 	],
-	// },
 	{
 		src: "/images/RectDadaScreenshot.png",
 		thumbnailSrc: "/images/RectDadaScreenshotThumbnail.png",
@@ -105,22 +91,20 @@ export const projects = [
 		deployedLink: "https://dada-museum.herokuapp.com/",
 		repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
 		description:
-			"A sample museum's homepage with a focus on functional features and dynamic, engaging content.",
-		stack: ["Node.js", "React", "Express.js", "Chakra UI", "Figma"],
-		bullets: [
-			"Built Current Exhibits and Featured Artist sections; designed reusable components for consistent site UX.",
-			"Implemented random art feature, making calls to the Art Institute of Chicago’s API on click or page load.",
+			"A sample site for a museum's homepage with a focus on responsive design, interactive features, and dynamic content, deployed with Heroku.",
+		stack: [
+			"React",
+			"JavaScript",
+			"Chakra UI",
+			"Node.js",
+			"Express.js",
+			"Figma",
+			"Heroku",
 		],
-	},
-	{
-		src: "/images/RectPortfolioScreenshot.png",
-		thumbnailSrc: "/images/RectPortfolioScreenshotThumbnail.png",
-		name: "Portfolio",
-		deployedLink: "https://www.EliasSZ.com/",
-		repoLink: "https://github.com/ColdWeatherBoyy/portfolio",
-		description:
-			"This portfolio that you're looking at right now! Built solo as a place to house my projects so far.",
-		stack: ["React", "Chakra UI", "Vite", "Node.js", "Express.js", "Heroku"],
+		bullets: [
+			"Designed reusable components for consistent site UX across desktop and mobile devices.",
+			"Implemented random art feature, making calls to the Art Institute of Chicago’s API on click and page load.",
+		],
 	},
 ];
 
