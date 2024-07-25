@@ -1,5 +1,30 @@
 export const projects = [
 	{
+		src: "/images/RectFiorelliScreenshot.png",
+		thumbnailSrc: "/images/RectFiorelliScreenshotThumbnail.png",
+		name: "Fiorelli Guitars",
+		deployedLink: "https://fiorelliguitars.com/",
+		repoLink: "https://github.com/ColdWeatherBoyy/fiorelli-guitars",
+		description:
+			"Built a fully custom, to-spec website with distinct client and admin portals for artisan guitar designer and builder, Fiorelli Guitars, deployed with Vercel. Actively enhancing site with new functionality.",
+		stack: [
+			"TypeScript",
+			"Next.js 14",
+			"PostgreSQL",
+			"Prisma",
+			"Tailwind CSS",
+			"Framer Motion",
+			"Cloudinary",
+			"Auth.js",
+			"Vercel",
+		],
+		bullets: [
+			"Designed and developed a customer-facing, responsive UI to effectively market products to customers; built a product photo gallery with click-to-expand images, utilizing Cloudinary’s CDN for optimized image delivery.",
+			"Developed an admin dashboard from scratch; implemented CMS using Prisma and PostgreSQL that enables site owner to manage site content and add, delete, and update guitar products displayed in customer-facing gallery.",
+			"Integrated OAuth with Auth.js to secure admin portal, ensuring non-technical site owner can safely use CMS and manage and view customer data and messages directly on site.",
+		],
+	},
+	{
 		src: "/images/RectPhysicalTherapyTimersScreenshot.png",
 		thumbnailSrc: "/images/RectPhysicalTherapyTimersScreenshotThumbnail.png",
 		name: "PT Timers",
@@ -8,7 +33,7 @@ export const projects = [
 		description:
 			"Built-to-spec app for physical therapy patients to save custom exercise timers by length and consecutive repetitions, deployed with AWS Amplify.",
 		stack: [
-			"Next.js",
+			"Next.js 14",
 			"TypeScript",
 			"Tailwind CSS",
 			"React",
@@ -84,28 +109,28 @@ export const projects = [
 			"Improved state management to optimize DB usage by caching global data for faster access.",
 		],
 	},
-	{
-		src: "/images/RectDadaScreenshot.png",
-		thumbnailSrc: "/images/RectDadaScreenshotThumbnail.png",
-		name: "Dada Art Museum",
-		deployedLink: "https://dada-museum.herokuapp.com/",
-		repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
-		description:
-			"A sample site for a museum's homepage with a focus on responsive design, interactive features, and dynamic content, deployed with Heroku.",
-		stack: [
-			"React",
-			"JavaScript",
-			"Chakra UI",
-			"Node.js",
-			"Express.js",
-			"Figma",
-			"Heroku",
-		],
-		bullets: [
-			"Designed reusable components for consistent site UX across desktop and mobile devices.",
-			"Implemented random art feature, making calls to the Art Institute of Chicago’s API on click and page load.",
-		],
-	},
+	// {
+	// 	src: "/images/RectDadaScreenshot.png",
+	// 	thumbnailSrc: "/images/RectDadaScreenshotThumbnail.png",
+	// 	name: "Dada Art Museum",
+	// 	deployedLink: "https://dada-museum.herokuapp.com/",
+	// 	repoLink: "https://github.com/ColdWeatherBoyy/dada-museum",
+	// 	description:
+	// 		"A sample site for a museum's homepage with a focus on responsive design, interactive features, and dynamic content, deployed with Heroku.",
+	// 	stack: [
+	// 		"React",
+	// 		"JavaScript",
+	// 		"Chakra UI",
+	// 		"Node.js",
+	// 		"Express.js",
+	// 		"Figma",
+	// 		"Heroku",
+	// 	],
+	// 	bullets: [
+	// 		"Designed reusable components for consistent site UX across desktop and mobile devices.",
+	// 		"Implemented random art feature, making calls to the Art Institute of Chicago’s API on click and page load.",
+	// 	],
+	// },
 ];
 
 // Constants for icons, to be used in the Image component for either theme

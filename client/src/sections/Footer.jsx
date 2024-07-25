@@ -1,6 +1,6 @@
+import { Flex, Link } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { themeContext } from "../context/context";
-import { Flex, Link } from "@chakra-ui/react";
 
 function Footer() {
 	// Import of themeContext to detect which color theme to use and options for theme colorways

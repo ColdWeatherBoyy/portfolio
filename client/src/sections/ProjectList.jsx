@@ -1,23 +1,23 @@
-import React, { useState, useContext } from "react";
-import { themeContext } from "../context/context";
-import {
-	useDisclosure,
-	Box,
-	Image,
-	Heading,
-	Flex,
-	IconButton,
-	useBreakpointValue,
-	Divider,
-} from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import {
+	Box,
+	Divider,
+	Flex,
+	Heading,
+	IconButton,
+	Image,
+	useBreakpointValue,
+	useDisclosure,
+} from "@chakra-ui/react";
+import React, { useContext, useState } from "react";
 import ProjectDescription from "../components/ProjectDescription";
 import { projects } from "../constants/Constants";
+import { themeContext } from "../context/context";
 
 const ProjectList = () => {
 	// use of useBreakpointValue to determine display size
 	const isLargerThanLg = useBreakpointValue({ base: false, lg: true });
-	// use of useDisclosure hook for slide transition. Passed as prop to ProjectDescription component, with a conditional use of onToggle on the IconButton components
+	// use of useDisclosure hook for slide transition. Passed as prop to ProjectDescription component.
 	const { isOpen, onToggle } = useDisclosure();
 
 	// Import of themeContext to detect which color theme to use and options for theme colorways
@@ -31,18 +31,11 @@ const ProjectList = () => {
 		setCurrentImageIndex((prevIndex) =>
 			prevIndex === 0 ? projects.length - 1 : prevIndex - 1
 		);
-
-		if (isOpen) {
-			onToggle();
-		}
 	};
 	const nextImage = () => {
 		setCurrentImageIndex((prevIndex) =>
 			prevIndex === projects.length - 1 ? 0 : prevIndex + 1
 		);
-		if (isOpen) {
-			onToggle();
-		}
 	};
 	const setImage = (index) => {
 		setCurrentImageIndex(index);

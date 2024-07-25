@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
-import { Flex, Text, Box, useBreakpointValue, Slide } from "@chakra-ui/react";
 import { InfoOutlineIcon } from "@chakra-ui/icons";
+import { Box, Flex, Slide, Text, useBreakpointValue } from "@chakra-ui/react";
+import React, { useContext, useRef } from "react";
 import { themeContext } from "../context/context";
 import LogoIcons from "./LogoIcons";
+import { useOutsideClick } from "@chakra-ui/react";
 
 function ProjectDescription({
 	repoLink,
@@ -18,6 +19,15 @@ function ProjectDescription({
 	const { textColor, bgColor } = useContext(themeContext);
 	// Use of Chakra's useBreakpointValue hook to determine if the screen is larger than its lg breakpoint
 	const isLargerThanLg = useBreakpointValue({ base: false, lg: true });
+	const ref = useRef();
+	useOutsideClick({
+		ref: ref,
+		handler: () => {
+			if (isOpen) {
+				onToggle();
+			}
+		},
+	});
 
 	return (
 		<>
@@ -90,6 +100,7 @@ function ProjectDescription({
 			{/* Chakra's built in Slide component for transition animation */}
 			<Slide direction="bottom" in={isOpen} onClick={onToggle} style={{ zIndex: 10 }}>
 				<Flex
+					ref={ref}
 					direction="column"
 					p="40px"
 					color={textColor}

@@ -102,7 +102,8 @@ function Intro() {
 				<CardBody py={0}>
 					<Flex height="100%" direction="column" justify="space-evenly">
 						<Text fontSize={{ base: "sm", md: "md" }} maxW="50%">
-							You made it! And now that I have your attention...
+							You made it! Thanks for taking the time to visit my portfolio. Now that I
+							have your attention...
 						</Text>
 						<Text alignSelf="center" fontSize={{ base: "sm", sm: "md" }}>
 							I'm{" "}
@@ -114,8 +115,9 @@ function Intro() {
 								(the guy in that picture up there)
 							</Text>
 						</Text>
-						<Text fontSize="xs" alignSelf="flex-end">
-							I'm friendly – get in touch!
+						<Text fontSize={{ base: "sm", md: "md" }} alignSelf="flex-end" maxW="50%">
+							I'm friendly, and I'd love to chat with you - about tech, music, or anything
+							else. Get in touch!
 						</Text>
 					</Flex>
 				</CardBody>

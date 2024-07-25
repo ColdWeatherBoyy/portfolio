@@ -8,6 +8,7 @@ import {
 	Text,
 	Heading,
 	Divider,
+	Link,
 } from "@chakra-ui/react";
 
 function Intro() {
@@ -42,21 +43,43 @@ function Intro() {
 				/>
 
 				<CardBody py="0">
-					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={1.75}>
+					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={1.75} marginBottom={2}>
 						As just mentioned, I'm Elias{" "}
 						<Text as="span" fontSize={{ base: "2xs", md: "xs" }}>
 							(Spector-Zabusky)
 						</Text>
-						, a software engineer and musician. I was last employed as a Fullstack
-						Software Engineer, focused on the design, development, and deployment of a
-						Chrome extension social media content generator powered by OpenAI's API, built
-						with TypeScript, Node.js, React, Styled Components, and AWS. Take a look at
-						some of my personal projects, listed below, to get a better sense of my work.
-						Years in music and other industries have helped me build strong skills in
-						collaboration, communication, and creative problem-solving which I bring to
-						all the work I do. I'm looking for my next opportunity to join a supportive
-						team that values growth, creativity, and collaboration. Let's chat! My contact
-						info is below.
+						, a software engineer and musician. I'm currently building{" "}
+						<Link
+							textDecoration={"underline"}
+							textUnderlineOffset={3}
+							isExternal
+							_hover={{ color: accentColor, textDecoration: "underline" }}
+							href="www.fiorelliguitars.com"
+						>
+							Fiorelli Guitars
+						</Link>
+						, a custom, to-spec website, with a distinct customer-facing UI and admin
+						dashboard, using Next.js 14, TypeScript, Tailwind CSS, PostgreSQL, Prisma, and
+						Vercel. I was also recently a Fullstack Software Engineer at{" "}
+						<Link
+							textDecoration={"underline"}
+							textUnderlineOffset={3}
+							isExternal
+							_hover={{ color: accentColor, textDecoration: "underline" }}
+							href="https://click2.ai/"
+						>
+							Click2.AI
+						</Link>
+						, developing a Chrome extension social media content generator powered by
+						OpenAI's API.{" "}
+					</Text>
+					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={1.75}>
+						Take a look at some of my personal projects, listed below, to get a better
+						sense of my work. Years in music and other industries have helped me build
+						strong skills in collaboration, communication, and creative problem-solving
+						which I bring to all the work I do. I'm looking for my next opportunity to
+						join a supportive team that values growth, creativity, and collaboration.
+						Let's chat! My contact info is below.
 					</Text>
 				</CardBody>
 			</Card>

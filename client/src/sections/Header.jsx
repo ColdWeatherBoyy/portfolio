@@ -1,6 +1,6 @@
+import { Box, Flex } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { themeContext } from "../context/context";
-import { Box, Flex } from "@chakra-ui/react";
 
 function Header() {
 	// Import of themeContext to detect which color theme to use and options for theme colorways
