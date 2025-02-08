@@ -50,7 +50,7 @@ function Intro() {
 						</Text>
 						, a software engineer and musician. I'm currently working for the American
 						Thoracic Society, leading their migration from Cascade CMS to Craft CMS and
-						implemting a site design refresh, as well as contributing to their custom
+						implementing a site design refresh, as well as contributing to their custom
 						SCSS, Twig, JS LAMP codebase. I was also recently a Fullstack Software
 						Engineer at
 						<Link
