@@ -20,7 +20,7 @@ export const projects = [
 		],
 		bullets: [
 			"Designed and developed a customer-facing, responsive UI to effectively market products to customers; built a product photo gallery with click-to-expand images, utilizing Cloudinary’s CDN for optimized image delivery.",
-			"Developed an admin dashboard from scratch; implemented CMS using Prisma and PostgreSQL that enables site owner to manage site content and add, delete, and update guitar products displayed in customer-facing gallery.",
+			"Developed an admin dashboard from scratch; implemented a CMS using Prisma and PostgreSQL that enables site owner to manage site content and add, delete, and update guitar products displayed in customer-facing gallery.",
 			"Integrated OAuth with Auth.js to secure admin portal, ensuring non-technical site owner can safely use CMS and manage and view customer data and messages directly on site.",
 		],
 	},

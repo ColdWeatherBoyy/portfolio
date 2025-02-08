@@ -48,19 +48,11 @@ function Intro() {
 						<Text as="span" fontSize={{ base: "2xs", md: "xs" }}>
 							(Spector-Zabusky)
 						</Text>
-						, a software engineer and musician. I'm currently building{" "}
-						<Link
-							textDecoration={"underline"}
-							textUnderlineOffset={3}
-							isExternal
-							_hover={{ color: accentColor, textDecoration: "underline" }}
-							href="www.fiorelliguitars.com"
-						>
-							Fiorelli Guitars
-						</Link>
-						, a custom, to-spec website, with a distinct customer-facing UI and admin
-						dashboard, using Next.js 14, TypeScript, Tailwind CSS, PostgreSQL, Prisma, and
-						Vercel. I was also recently a Fullstack Software Engineer at{" "}
+						, a software engineer and musician. I'm currently working for the American
+						Thoracic Society, leading their migration from Cascade CMS to Craft CMS and
+						implemting a site design refresh, as well as contributing to their custom
+						SCSS, Twig, JS LAMP codebase. I was also recently a Fullstack Software
+						Engineer at
 						<Link
 							textDecoration={"underline"}
 							textUnderlineOffset={3}
@@ -74,12 +66,12 @@ function Intro() {
 						OpenAI's API.{" "}
 					</Text>
 					<Text fontSize={{ base: "sm", md: "md" }} lineHeight={1.75}>
-						Take a look at some of my personal projects, listed below, to get a better
-						sense of my work. Years in music and other industries have helped me build
-						strong skills in collaboration, communication, and creative problem-solving
-						which I bring to all the work I do. I'm looking for my next opportunity to
-						join a supportive team that values growth, creativity, and collaboration.
-						Let's chat! My contact info is below.
+						Take a look at some of my personal projects and freelance work, listed below,
+						to get a better sense of me. Years in music and other industries have helped
+						me build strong skills in collaboration, communication, and creative
+						problem-solving which I bring to all the work I do. I'm looking for my next
+						opportunity to join a supportive team that values growth, creativity, and
+						collaboration. Let's chat! My contact info is below.
 					</Text>
 				</CardBody>
 			</Card>
