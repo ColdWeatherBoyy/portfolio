@@ -2,7 +2,7 @@ export const links = [
 	{ label: "GitHub", href: "https://github.com/coldweatherboyy", external: true },
 	{
 		label: "LinkedIn",
-		href: "https://linkedin.com/in/eliass-z",
+		href: "https://www.linkedin.com/in/elias-sz/",
 		external: true,
 	},
 	{

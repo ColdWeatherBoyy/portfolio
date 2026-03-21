@@ -16,8 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-	title: "Elias Spector-Zabusky — Personal Page",
-	description: "Personal page of Elias Spector-Zabusky.",
+	title: "Elias's Portfolio",
+	description: "This is my personal page/portfolio",
 };
 
 const RootLayout = ({
