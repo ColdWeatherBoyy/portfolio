@@ -28,8 +28,8 @@ export const Bio = () => {
 					love collaborating within tech and across disciplines.
 				</p>
 				<p className="text-base leading-6 text-text-secondary">
-					Unrelatedly, I'm also a musician, but that's a story for another time... I'm
-					always open to connecting, feel free to reach out!
+					I'm also a musician, but that's a story for another time... I'm always open to
+					connecting, feel free to reach out!
 				</p>
 			</div>
 		</section>

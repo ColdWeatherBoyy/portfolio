@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 
 const Home = () => {
 	return (
-		<div className="mx-auto flex max-w-5xl flex-col gap-16 px-6 md:gap-24 md:px-10">
+		<div className="mx-auto flex min-h-dvh max-w-5xl flex-col gap-16 px-6 md:gap-24 md:px-10">
 			<Header />
 
 			<div className="md:grid md:grid-cols-3 md:gap-32">
