@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Inter, Poppins } from "next/font/google";
 import "@/app/globals.css";
 
@@ -27,6 +28,7 @@ const RootLayout = ({
 }>) => {
 	return (
 		<html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+			<Analytics />
 			<body className="min-h-dvh">{children}</body>
 		</html>
 	);
