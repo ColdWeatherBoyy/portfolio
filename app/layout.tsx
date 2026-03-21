@@ -1,19 +1,35 @@
 import type { Metadata } from "next";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-inter",
+});
+
+const poppins = Poppins({
+	subsets: ["latin"],
+	weight: ["300", "400", "500", "600"],
+	display: "swap",
+	variable: "--font-poppins",
+});
+
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "",
+	title: "Elias's Portfolio",
+	description: "Thanks for stopping by",
 };
 
-export default function RootLayout({
-  children,
+const RootLayout = ({
+	children,
 }: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
-  );
-}
+	children: React.ReactNode;
+}>) => {
+	return (
+		<html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+			<body className="min-h-dvh">{children}</body>
+		</html>
+	);
+};
+
+export default RootLayout;
