@@ -3,15 +3,16 @@
 @theme {
 	--font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 	--font-display: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
-	--tracking-label: 0.15em;
+	--tracking-label: 0.16em;
 
-	--color-bg: #030915;
-	--color-surface: #101b2d;
-	--color-text: #f1f5f9;
-	--color-text-secondary: #d2dced;
-	--color-text-tertiary: #a2b2cb;
-	--color-border: #3b4f70;
-	--color-accent: #72b3ff;
+	--color-bg: #05070b;
+	--color-surface: #0f1724;
+	--color-text: #f5f7fb;
+	--color-text-secondary: #c7d0dd;
+	--color-text-tertiary: #8f9caf;
+	--color-border: #2f3b4f;
+	--color-accent: #6cb6ff;
+	--color-link: #5a96ea;
 }
 
 html {
@@ -29,9 +30,4 @@ body {
 ::selection {
 	background-color: var(--color-accent);
 	color: var(--color-bg);
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
 }

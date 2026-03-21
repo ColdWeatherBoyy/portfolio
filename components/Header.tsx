@@ -1,6 +1,6 @@
-import MobileNav from "@/components/MobileNav";
+import { MobileNav } from "@/components/MobileNav";
 
-const Header = () => {
+export const Header = () => {
 	return (
 		<header className="flex flex-col gap-4 pt-16 md:pt-28">
 			<div className="flex items-start justify-between">
@@ -9,7 +9,7 @@ const Header = () => {
 						Elias Spector-Zabusky
 					</h1>
 					<p className="text-sm font-medium uppercase tracking-label text-text-tertiary">
-						Product-Oriented Software Engineer
+						Software Engineer and Musician
 					</p>
 				</div>
 
@@ -20,5 +20,3 @@ const Header = () => {
 		</header>
 	);
 };
-
-export default Header;

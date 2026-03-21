@@ -10,5 +10,5 @@ export const links = [
 		href: "/assets/Resume_SpectorZabusky.pdf",
 		external: false,
 	},
-	{ label: "Email me", href: "mailto:elias.spector.zabusky@gmail.com", external: false },
+	{ label: "Email", href: "mailto:elias.spector.zabusky@gmail.com", external: false },
 ] as const;

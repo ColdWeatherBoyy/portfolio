@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -16,8 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-	title: "Elias's Portfolio",
-	description: "Thanks for stopping by",
+	title: "Elias Spector-Zabusky — Personal Page",
+	description: "Personal page of Elias Spector-Zabusky.",
 };
 
 const RootLayout = ({

@@ -2,8 +2,9 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { links } from "@/lib/constants";
+import { NavLink } from "@/components/NavLink";
 
-const MobileNav = () => {
+export const MobileNav = () => {
 	const [open, setOpen] = useState(false);
 
 	const close = useCallback(() => setOpen(false), []);
@@ -26,10 +27,10 @@ const MobileNav = () => {
 			<button
 				onClick={() => setOpen(true)}
 				aria-label="Open navigation menu"
-				className="md:hidden mt-1 flex flex-col gap-1.25 p-2 -m-2"
+				className="md:hidden mt-1 flex cursor-pointer flex-col gap-1.25 p-2 -m-2 text-text-secondary transition-colors duration-200 hover:text-accent"
 			>
-				<span className="block h-px w-4.5 bg-text-secondary" />
-				<span className="block h-px w-4.5 bg-text-secondary" />
+				<span className="block h-px w-4.5 bg-current" />
+				<span className="block h-px w-4.5 bg-current" />
 			</button>
 
 			<div
@@ -49,7 +50,7 @@ const MobileNav = () => {
 				<button
 					onClick={close}
 					aria-label="Close navigation menu"
-					className="self-end p-2 -m-2 text-text-tertiary hover:text-accent transition-colors"
+					className="self-end cursor-pointer p-2 -m-2 text-text-tertiary transition-colors duration-200 hover:text-accent"
 				>
 					<svg
 						width="14"
@@ -64,26 +65,19 @@ const MobileNav = () => {
 				</button>
 
 				<p className="text-sm font-semibold uppercase tracking-label text-accent">
-					Elsewhere
+					Me, Elsewhere
 				</p>
 
 				<ul className="flex flex-col gap-4">
 					{links.map((link) => (
 						<li key={link.label}>
-							<a
+							<NavLink
 								href={link.href}
+								label={link.label}
+								external={link.external}
+								download={link.label === "Resume"}
 								onClick={close}
-								{...(link.external
-									? { target: "_blank", rel: "noopener noreferrer" }
-									: {})}
-								{...(link.label === "Resume" ? { download: true } : {})}
-								className="group inline-flex items-center gap-2 text-sm text-text-secondary transition-colors duration-200 hover:text-text"
-							>
-								<span className="inline-block h-px w-4 bg-text-tertiary transition-all duration-300 group-hover:w-8 group-hover:bg-accent" />
-								<span className="transition-transform duration-300 group-hover:translate-x-0.5">
-									{link.label}
-								</span>
-							</a>
+							/>
 						</li>
 					))}
 				</ul>
@@ -91,5 +85,3 @@ const MobileNav = () => {
 		</>
 	);
 };
-
-export default MobileNav;

@@ -1,7 +1,7 @@
-import Header from "@/components/Header";
-import Bio from "@/components/Bio";
-import Links from "@/components/Links";
-import Footer from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { Bio } from "@/components/Bio";
+import { DesktopLinks } from "@/components/DesktopLinks";
+import { Footer } from "@/components/Footer";
 
 const Home = () => {
 	return (
@@ -14,7 +14,7 @@ const Home = () => {
 				</main>
 
 				<aside className="hidden md:block md:col-span-1">
-					<Links />
+					<DesktopLinks />
 				</aside>
 			</div>
 
