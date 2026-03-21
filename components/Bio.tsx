@@ -22,10 +22,10 @@ export const Bio = () => {
 					.
 				</p>
 				<p className="text-base leading-6 text-text-secondary">
-					I work most regularly within the JS ecosystem (e.g. Next.js, React, TypeScript,
-					Node), and have been primarily frontend and product focused in my roles, but I
-					enjoy working across the stack. I care a lot about the teams I work with and
-					love collaborating within tech and across disciplines.
+					I mostly work within the JS ecosystem (e.g. Next.js, React, TypeScript, Node),
+					and, while my background leans more frontend, I enjoy working across the stack.
+					I care a lot about the teams I work with and love collaborating within
+					engineering and across disciplines.
 				</p>
 				<p className="text-base leading-6 text-text-secondary">
 					I'm also a musician, but that's a story for another time... I'm always open to
